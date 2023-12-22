@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>appletreeat</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Mulish&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body class="font-mulish scroll-smooth">
+    <section
+      id="header"
+      class="fixed top-0 inset-x-0 p-8 flex justify-between items-center z-50 duration-300 ease-linear"
+    >
+      <div class="flex items-center gap-8">
+        <div class="flex items-center gap-4">
+          <img
+            src="./assets/logo.svg"
+            alt="logo"
+            width="50"
+            height="60"
+            class="max-w-[50px]"
+          />
+          <span
+            class="text-[#66BF6B] text-2xl tracking-[0.75px] hidden lg:inline-block font-semibold"
+            >appletreeat</span
+          >
+        </div>
+        <hr class="w-[1px] h-[45px] bg-[#7C7C7C] hidden lg:inline-block" />
+        <a class="text-lg hidden lg:inline-block" href="/">Home</a>
+        <a class="text-lg hidden lg:inline-block" href="#features">Features</a>
+        <a class="text-lg hidden lg:inline-block" href="#products">Products</a>
+        <a class="text-lg hidden lg:inline-block" href="#mission">Mission</a>
+      </div>
+      <button
+        class="px-6 py-2 text-xl border-[1.5px] border-black rounded-[30px] hidden lg:inline-block"
+      >
+        Contact us
+      </button>
+      <button id="open-navbar" class="lg:hidden">
+        <i class="ph ph-list text-[3rem]"></i>
+      </button>
+    </section>
+    <section
+      id="mobile-navbar"
+      class="fixed inset-y-0 right-0 left-[150%] bg-white z-[999999] p-8 space-y-16 duration-300 ease-linear"
+    >
+      <div class="flex justify-between items-center">
+        <img
+          src="./assets/logo.svg"
+          alt="logo"
+          width="50"
+          height="60"
+          class="max-w-[50px]"
+        />
+        <button id="close-navbar">
+          <i class="ph ph-x text-[3rem]"></i>
+        </button>
+      </div>
+      <div class="flex flex-col gap-8 text-4xl">
+        <a href="/">Home</a>
+        <a href="#features">Features</a>
+        <a href="#products">Products</a>
+        <a href="#mission"> Mission </a>
+      </div>
+      <div>
+        <h3 class="text-xl font-medium mb-2">Contact us</h3>
+        <p class="text-[#7c7c7c]">
+          contact@appletreeat.id
+          <br />
+          +62 12345678
+          <br />
+          Jl. Kliningan No.6, Turangga
+          <br />
+          Bandung, 40264
+        </p>
+      </div>
+    </section>
+    <section
+      id="hero"
+      class="h-screen bg-[url(./assets/hero-bg.jpg)] bg-cover relative flex justify-center lg:py-52 py-44"
+    >
+      <div class="w-[350px] lg:w-[750px] z-10">
+        <h1
+          class="font-merriweather text-2xl lg:text-4xl font-bold text-center mb-6 leading-snug"
+        >
+          Supplying premium and freshly harvested apples for your business needs
+        </h1>
+        <p class="text-center lg:text-xl mb-10">
+          At appletreeat, we offer a platform as a seamless bridge connecting
+          apple orchard owners in Malang with your business.
+        </p>
+        <div class="flex justify-center">
+          <button
+            class="px-6 py-3 text-white text-xl bg-[#66BF6B] rounded-[30px]"
+          >
+            Explore how we work
+          </button>
+        </div>
+      </div>
+      <div
+        class="absolute inset-0 bg-[linear-gradient(180deg,#FFF_0%,rgba(255,255,255,0.95)_70%,rgba(255,255,255,0.05)_95%,rgba(255,255,255,0.00)_100%)]"
+      ></div>
+    </section>
+
+    <div class="h-screen bg-[#66BF6B]"></div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
