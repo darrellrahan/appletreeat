@@ -46,3 +46,20 @@ nextBtn.addEventListener("click", () => {
   const slideWidth = slide.clientWidth;
   carousel.scrollLeft += slideWidth + 32;
 });
+
+// review carousel
+
+const reviewCarousel = document.getElementById("review-carousel");
+const prevBtnReview = document.getElementById("prev-review");
+const nextBtnReview = document.getElementById("next-review");
+const slideReview = document.querySelector(".review-slide");
+
+prevBtnReview.addEventListener("click", () => {
+  const slideWidth = slideReview.clientWidth;
+  reviewCarousel.scrollLeft -= slideWidth + 48;
+});
+
+nextBtnReview.addEventListener("click", () => {
+  const slideWidth = slideReview.clientWidth;
+  reviewCarousel.scrollLeft += slideWidth + 48;
+});

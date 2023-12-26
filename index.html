@@ -15,7 +15,7 @@
     <link href="./output.css" rel="stylesheet" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
-  <body class="font-mulish scroll-smooth">
+  <body class="font-mulish">
     <section
       id="header"
       class="fixed top-0 inset-x-0 p-8 flex justify-between items-center z-50 duration-300 ease-linear"
@@ -375,6 +375,242 @@
             alt="arrow"
             width="60"
             height="10"
+          />
+        </button>
+      </div>
+    </section>
+    <section
+      id="mission"
+      class="text-center py-16 px-8 bg-[url(./assets/mission-bg.svg)] bg-cover"
+    >
+      <div class="space-y-3 lg:space-y-4 mb-12 lg:mb-16">
+        <h4 class="text-[#66BF6B]">OUR MISSION</h4>
+        <h1 class="font-merriweather font-bold text-2xl lg:text-3xl">
+          How we work
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor <br class="hidden lg:inline-block" />
+          incididunt ut labore et dolore
+        </p>
+      </div>
+      <div class="grid grid-cols-1 gap-8 px-8 lg:px-0 lg:grid-cols-4">
+        <div
+          class="bg-white p-6 rounded-[10px] flex flex-col gap-6 items-center border border-[rgba(124,124,124,0.10)] shadow-[0px_2.343px_2.343px_0px_rgba(0,0,0,0.25)] relative"
+        >
+          <img
+            src="./assets/flow-1.svg"
+            alt="order flow"
+            width="100"
+            height="100"
+          />
+          <h3 class="text-2xl font-bold font-merriweather">Pilih Produk</h3>
+          <p>Massa ultrices blandit elit blandit. Eu maecenas bibendum</p>
+          <img
+            src="./assets/flow-line.svg"
+            alt="line"
+            width="10"
+            height="60"
+            class="absolute -bottom-12 inset-x-1/2 z-10 lg:hidden"
+          />
+          <img
+            src="./assets/flow-line-horizontal.svg"
+            alt="line"
+            width="120"
+            height="20"
+            class="absolute -right-[4.85rem] top-28 z-10 hidden lg:inline-block"
+          />
+        </div>
+        <div
+          class="bg-white p-6 rounded-[10px] flex flex-col gap-6 items-center border border-[rgba(124,124,124,0.10)] shadow-[0px_2.343px_2.343px_0px_rgba(0,0,0,0.25)] relative"
+        >
+          <img
+            src="./assets/flow-2.svg"
+            alt="order flow"
+            width="100"
+            height="100"
+          />
+          <h3 class="text-2xl font-bold font-merriweather">
+            Pemesanan & Negosiasi
+          </h3>
+          <p>Massa ultrices blandit elit blandit. Eu maecenas bibendum</p>
+          <img
+            src="./assets/flow-line.svg"
+            alt="line"
+            width="10"
+            height="60"
+            class="absolute -bottom-12 inset-x-1/2 z-10 lg:hidden"
+          />
+          <img
+            src="./assets/flow-line-horizontal.svg"
+            alt="line"
+            width="120"
+            height="20"
+            class="absolute -right-[4.85rem] top-28 z-10 hidden lg:inline-block"
+          />
+        </div>
+        <div
+          class="bg-white p-6 rounded-[10px] flex flex-col gap-6 items-center border border-[rgba(124,124,124,0.10)] shadow-[0px_2.343px_2.343px_0px_rgba(0,0,0,0.25)] relative"
+        >
+          <img
+            src="./assets/flow-3.svg"
+            alt="order flow"
+            width="100"
+            height="100"
+          />
+          <h3 class="text-2xl font-bold font-merriweather">Bayar</h3>
+          <p>Massa ultrices blandit elit blandit. Eu maecenas bibendum</p>
+          <img
+            src="./assets/flow-line.svg"
+            alt="line"
+            width="10"
+            height="60"
+            class="absolute -bottom-12 inset-x-1/2 z-10 lg:hidden"
+          />
+          <img
+            src="./assets/flow-line-horizontal.svg"
+            alt="line"
+            width="120"
+            height="20"
+            class="absolute -right-[4.85rem] top-28 z-10 hidden lg:inline-block"
+          />
+        </div>
+        <div
+          class="bg-white p-6 rounded-[10px] flex flex-col gap-6 items-center border border-[rgba(124,124,124,0.10)] shadow-[0px_2.343px_2.343px_0px_rgba(0,0,0,0.25)] relative"
+        >
+          <img
+            src="./assets/flow-4.svg"
+            alt="order flow"
+            width="100"
+            height="100"
+          />
+          <h3 class="text-2xl font-bold font-merriweather">Kirim</h3>
+          <p>Massa ultrices blandit elit blandit. Eu maecenas bibendum</p>
+        </div>
+      </div>
+    </section>
+    <section id="review" class="px-8 py-16 lg:py-24">
+      <h1
+        class="text-center text-2xl lg:text-3xl font-bold font-merriweather mb-12 lg:mb-24"
+      >
+        What farmers and distributors say
+      </h1>
+      <div
+        id="review-carousel"
+        class="carousel scroll-smooth overflow-scroll flex gap-12 mb-8"
+      >
+        <div
+          class="review-slide w-full flex-[1_0_100%] lg:flex gap-32 justify-center items-start"
+        >
+          <img
+            src="./assets/review-1-lg.svg"
+            alt="farmer"
+            width="180"
+            height="250"
+            class="mx-auto lg:order-last lg:mx-0 lg:w-[20rem] lg:-translate-y-12"
+          />
+          <div class="mt-8 lg:mt-0">
+            <div class="text-right mb-8 lg:mb-12 lg:w-[750px]">
+              <p class="text-lg mb-4">
+                “Website adalah platform yang sangat membantu saya untuk
+                meningkatkan penjualan apel saya. Dengan Website, saya dapat
+                menjangkau lebih banyak distributor dan mendapatkan harga yang
+                lebih baik.”
+              </p>
+              <h6 class="font-bold text-sm">Pak Didi</h6>
+              <h6 class="text-sm">Petani Apel Malang</h6>
+            </div>
+            <div class="lg:w-[700px]">
+              <p class="text-lg mb-4">
+                "Dengan Website, saya dapat menemukan kebun apel yang sesuai
+                dengan kebutuhan saya dengan mudah dan cepat. Saya sangat
+                merekomendasikan Website kepada semua distributor apel."
+              </p>
+              <h6 class="font-bold text-sm">Pak Budi</h6>
+              <h6 class="text-sm">Distributor Apel Malang</h6>
+            </div>
+          </div>
+        </div>
+        <div
+          class="review-slide w-full flex-[1_0_100%] lg:flex gap-32 justify-center items-start"
+        >
+          <img
+            src="./assets/review-1-lg.svg"
+            alt="farmer"
+            width="180"
+            height="250"
+            class="mx-auto lg:order-last lg:mx-0 lg:w-[20rem] lg:-translate-y-12"
+          />
+          <div class="mt-8 lg:mt-0">
+            <div class="text-right mb-8 lg:mb-12 lg:w-[750px]">
+              <p class="text-lg mb-4">
+                “Website adalah platform yang sangat membantu saya untuk
+                meningkatkan penjualan apel saya. Dengan Website, saya dapat
+                menjangkau lebih banyak distributor dan mendapatkan harga yang
+                lebih baik.”
+              </p>
+              <h6 class="font-bold text-sm">Pak Didi</h6>
+              <h6 class="text-sm">Petani Apel Malang</h6>
+            </div>
+            <div class="lg:w-[700px]">
+              <p class="text-lg mb-4">
+                "Dengan Website, saya dapat menemukan kebun apel yang sesuai
+                dengan kebutuhan saya dengan mudah dan cepat. Saya sangat
+                merekomendasikan Website kepada semua distributor apel."
+              </p>
+              <h6 class="font-bold text-sm">Pak Budi</h6>
+              <h6 class="text-sm">Distributor Apel Malang</h6>
+            </div>
+          </div>
+        </div>
+        <div
+          class="review-slide w-full flex-[1_0_100%] lg:flex gap-32 justify-center items-start"
+        >
+          <img
+            src="./assets/review-1-lg.svg"
+            alt="farmer"
+            width="180"
+            height="250"
+            class="mx-auto lg:order-last lg:mx-0 lg:w-[20rem] lg:-translate-y-12"
+          />
+          <div class="mt-8 lg:mt-0">
+            <div class="text-right mb-8 lg:mb-12 lg:w-[750px]">
+              <p class="text-lg mb-4">
+                “Website adalah platform yang sangat membantu saya untuk
+                meningkatkan penjualan apel saya. Dengan Website, saya dapat
+                menjangkau lebih banyak distributor dan mendapatkan harga yang
+                lebih baik.”
+              </p>
+              <h6 class="font-bold text-sm">Pak Didi</h6>
+              <h6 class="text-sm">Petani Apel Malang</h6>
+            </div>
+            <div class="lg:w-[700px]">
+              <p class="text-lg mb-4">
+                "Dengan Website, saya dapat menemukan kebun apel yang sesuai
+                dengan kebutuhan saya dengan mudah dan cepat. Saya sangat
+                merekomendasikan Website kepada semua distributor apel."
+              </p>
+              <h6 class="font-bold text-sm">Pak Budi</h6>
+              <h6 class="text-sm">Distributor Apel Malang</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-3 lg:px-32">
+        <button id="prev-review">
+          <img
+            src="./assets/product-carousel-prev.svg"
+            alt="prev"
+            width="56"
+            height="56"
+          />
+        </button>
+        <button id="next-review">
+          <img
+            src="./assets/product-carousel-next.svg"
+            alt="next"
+            width="56"
+            height="56"
           />
         </button>
       </div>
