@@ -84,3 +84,20 @@ for (let i = 0; i < question.length; i++) {
     }
   });
 }
+
+// review carousel
+
+const blogCarousel = document.getElementById("blog-carousel");
+const prevBtnBlog = document.getElementById("prev-blog");
+const nextBtnBlog = document.getElementById("next-blog");
+const slideBlog = document.querySelector(".blog-slide");
+
+prevBtnBlog.addEventListener("click", () => {
+  const slideWidth = slideBlog.clientWidth;
+  blogCarousel.scrollLeft -= slideWidth + 32;
+});
+
+nextBtnBlog.addEventListener("click", () => {
+  const slideWidth = slideBlog.clientWidth;
+  blogCarousel.scrollLeft += slideWidth + 32;
+});
