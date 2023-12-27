@@ -63,3 +63,24 @@ nextBtnReview.addEventListener("click", () => {
   const slideWidth = slideReview.clientWidth;
   reviewCarousel.scrollLeft += slideWidth + 48;
 });
+
+// faq
+
+const question = document.getElementsByClassName("question");
+const answer = document.getElementsByClassName("answer");
+const expandBtn = document.getElementsByClassName("expand-btn");
+for (let i = 0; i < question.length; i++) {
+  question[i].addEventListener("click", () => {
+    if (answer[i].classList.contains("max-h-0")) {
+      expandBtn[i].classList.remove("ph-caret-down");
+      expandBtn[i].classList.add("ph-caret-up");
+      answer[i].classList.remove("max-h-0", "pt-0");
+      answer[i].classList.add("max-h-[28rem]", "lg:max-h-[8rem]", "pt-6");
+    } else {
+      expandBtn[i].classList.remove("ph-caret-up");
+      expandBtn[i].classList.add("ph-caret-down");
+      answer[i].classList.remove("max-h-[28rem]", "lg:max-h-[8rem]", "pt-6");
+      answer[i].classList.add("max-h-0", "pt-0");
+    }
+  });
+}
