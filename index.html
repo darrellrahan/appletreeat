@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -35,10 +35,13 @@
           >
         </div>
         <hr class="w-[1px] h-[45px] bg-[#7C7C7C] hidden lg:inline-block" />
-        <a class="text-lg hidden lg:inline-block" href="/">Home</a>
+        <button class="to-top text-lg hidden lg:inline-block">Home</button>
         <a class="text-lg hidden lg:inline-block" href="#features">Features</a>
         <a class="text-lg hidden lg:inline-block" href="#products">Products</a>
-        <a class="text-lg hidden lg:inline-block" href="#mission">Mission</a>
+        <a class="text-lg hidden lg:inline-block" href="#order">Order</a>
+        <a class="text-lg hidden lg:inline-block" href="#review">Review</a>
+        <a class="text-lg hidden lg:inline-block" href="#faq">FAQ</a>
+        <a class="text-lg hidden lg:inline-block" href="#blog">Blog</a>
       </div>
       <button
         class="px-6 py-2 text-xl border-[1.5px] border-black rounded-[30px] hidden lg:inline-block"
@@ -65,11 +68,14 @@
           <i class="ph ph-x text-[3rem]"></i>
         </button>
       </div>
-      <div class="flex flex-col gap-8 text-4xl">
-        <a href="/">Home</a>
-        <a href="#features">Features</a>
-        <a href="#products">Products</a>
-        <a href="#mission"> Mission </a>
+      <div class="flex flex-col gap-4 text-3xl items-start">
+        <button class="to-top nav-link">Home</button>
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#products">Products</a>
+        <a class="nav-link" href="#order">Order</a>
+        <a class="nav-link" href="#review">Review</a>
+        <a class="nav-link" href="#faq">FAQ</a>
+        <a class="nav-link" href="#blog">Blog</a>
       </div>
       <div>
         <h3 class="text-xl font-medium mb-2">Contact us</h3>
@@ -199,9 +205,7 @@
         </div>
         <p class="font-semibold lg:w-[650px] lg:text-lg">
           Our products are brought directly from apple orchard farmers in
-          Malang, ensuring unmatched quality and quantity. The following photos
-          are of our partner's apple orchard market which displays the
-          authenticity of Malang apple products.
+          Malang, ensuring unmatched quality and quantity.
         </p>
       </div>
       <div
@@ -232,13 +236,36 @@
           <div class="absolute inset-0 bg-black/40 rounded-[10px]"></div>
         </div>
         <div
-          class="slide basis-full lg:basis-[525px] flex-none h-full bg-[url(./assets/product-1.png)] bg-cover bg-center rounded-[10px] flex items-end p-6 text-white relative"
+          class="slide basis-full lg:basis-[525px] flex-none h-full bg-[url(./assets/product-2.png)] bg-cover bg-center rounded-[10px] flex items-end p-6 text-white relative"
         >
           <div class="z-10 relative w-full">
             <h3 class="text-xl font-merriweather font-bold mb-2">
-              Agrowisata Kusuma
+              Agro Rakyat
             </h3>
-            <p class="text-[#CFCFCF] mb-4">Jalan Abdul Gani Atas, Ngagik</p>
+            <p class="text-[#CFCFCF] mb-4">Jl. Raya Sidomulyo</p>
+            <div class="grid grid-cols-2 gap-4">
+              <button
+                class="rounded-[30px] border border-white py-1 text-lg text-center"
+              >
+                Detail
+              </button>
+              <button
+                class="rounded-[30px] border border-[#66BF6B] bg-[#66BF6B] py-1 text-lg text-center"
+              >
+                Contact
+              </button>
+            </div>
+          </div>
+          <div class="absolute inset-0 bg-black/40 rounded-[10px]"></div>
+        </div>
+        <div
+          class="slide basis-full lg:basis-[525px] flex-none h-full bg-[url(./assets/product-3.png)] bg-cover bg-center rounded-[10px] flex items-end p-6 text-white relative"
+        >
+          <div class="z-10 relative w-full">
+            <h3 class="text-xl font-merriweather font-bold mb-2">
+              Kelompok Tani Makmur Abadi
+            </h3>
+            <p class="text-[#CFCFCF] mb-4">Jl. Pangeran Diponegoro</p>
             <div class="grid grid-cols-2 gap-4">
               <button
                 class="rounded-[30px] border border-white py-1 text-lg text-center"
@@ -259,9 +286,9 @@
         >
           <div class="z-10 relative w-full">
             <h3 class="text-xl font-merriweather font-bold mb-2">
-              Agrowisata Kusuma
+              Apel Mandiri
             </h3>
-            <p class="text-[#CFCFCF] mb-4">Jalan Abdul Gani Atas, Ngagik</p>
+            <p class="text-[#CFCFCF] mb-4">Jl Raya Junggo</p>
             <div class="grid grid-cols-2 gap-4">
               <button
                 class="rounded-[30px] border border-white py-1 text-lg text-center"
@@ -278,13 +305,13 @@
           <div class="absolute inset-0 bg-black/40 rounded-[10px]"></div>
         </div>
         <div
-          class="slide basis-full lg:basis-[525px] flex-none h-full bg-[url(./assets/product-1.png)] bg-cover bg-center rounded-[10px] flex items-end p-6 text-white relative"
+          class="slide basis-full lg:basis-[525px] flex-none h-full bg-[url(./assets/product-2.png)] bg-cover bg-center rounded-[10px] flex items-end p-6 text-white relative"
         >
           <div class="z-10 relative w-full">
             <h3 class="text-xl font-merriweather font-bold mb-2">
-              Agrowisata Kusuma
+              Green Garden
             </h3>
-            <p class="text-[#CFCFCF] mb-4">Jalan Abdul Gani Atas, Ngagik</p>
+            <p class="text-[#CFCFCF] mb-4">Jl. Raya Tulungrejo</p>
             <div class="grid grid-cols-2 gap-4">
               <button
                 class="rounded-[30px] border border-white py-1 text-lg text-center"
@@ -301,36 +328,13 @@
           <div class="absolute inset-0 bg-black/40 rounded-[10px]"></div>
         </div>
         <div
-          class="slide basis-full lg:basis-[525px] flex-none h-full bg-[url(./assets/product-1.png)] bg-cover bg-center rounded-[10px] flex items-end p-6 text-white relative"
+          class="slide basis-full lg:basis-[525px] flex-none h-full bg-[url(./assets/product-3.png)] bg-cover bg-center rounded-[10px] flex items-end p-6 text-white relative"
         >
           <div class="z-10 relative w-full">
             <h3 class="text-xl font-merriweather font-bold mb-2">
-              Agrowisata Kusuma
+              New Mitra Apel
             </h3>
-            <p class="text-[#CFCFCF] mb-4">Jalan Abdul Gani Atas, Ngagik</p>
-            <div class="grid grid-cols-2 gap-4">
-              <button
-                class="rounded-[30px] border border-white py-1 text-lg text-center"
-              >
-                Detail
-              </button>
-              <button
-                class="rounded-[30px] border border-[#66BF6B] bg-[#66BF6B] py-1 text-lg text-center"
-              >
-                Contact
-              </button>
-            </div>
-          </div>
-          <div class="absolute inset-0 bg-black/40 rounded-[10px]"></div>
-        </div>
-        <div
-          class="slide basis-full lg:basis-[525px] flex-none h-full bg-[url(./assets/product-1.png)] bg-cover bg-center rounded-[10px] flex items-end p-6 text-white relative"
-        >
-          <div class="z-10 relative w-full">
-            <h3 class="text-xl font-merriweather font-bold mb-2">
-              Agrowisata Kusuma
-            </h3>
-            <p class="text-[#CFCFCF] mb-4">Jalan Abdul Gani Atas, Ngagik</p>
+            <p class="text-[#CFCFCF] mb-4">Sidomulyo, Kota Batu</p>
             <div class="grid grid-cols-2 gap-4">
               <button
                 class="rounded-[30px] border border-white py-1 text-lg text-center"
@@ -347,9 +351,7 @@
           <div class="absolute inset-0 bg-black/40 rounded-[10px]"></div>
         </div>
       </div>
-      <div
-        class="flex justify-between items-center lg:flex-col lg:justify-normal lg:items-baseline lg:gap-4"
-      >
+      <div class="flex justify-between items-center">
         <div class="flex gap-3">
           <button id="prev">
             <img
@@ -380,18 +382,17 @@
       </div>
     </section>
     <section
-      id="mission"
+      id="order"
       class="text-center py-16 lg:px-40 px-8 bg-[url(./assets/mission-bg.svg)] bg-cover"
     >
       <div class="space-y-3 lg:space-y-4 mb-12 lg:mb-16">
-        <h4 class="text-[#66BF6B]">OUR MISSION</h4>
+        <h4 class="text-[#66BF6B]">ORDER FLOW</h4>
         <h1 class="font-merriweather font-bold text-2xl lg:text-3xl">
           How we work
         </h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor <br class="hidden lg:inline-block" />
-          incididunt ut labore et dolore
+        <p class="px-8">
+          We are committed to ensuring the freshness of our products until they
+          reach your hands.
         </p>
       </div>
       <div class="grid grid-cols-1 gap-8 px-8 lg:px-0 lg:grid-cols-4">
@@ -405,7 +406,10 @@
             height="100"
           />
           <h3 class="text-2xl font-bold font-merriweather">Pilih Produk</h3>
-          <p>Massa ultrices blandit elit blandit. Eu maecenas bibendum</p>
+          <p>
+            Dapatkan berbagai macam apel Malang berkualitas langsung dari petani
+            lokal.
+          </p>
           <img
             src="./assets/flow-line.svg"
             alt="line"
@@ -430,8 +434,8 @@
             width="100"
             height="100"
           />
-          <h3 class="text-2xl font-bold font-merriweather">Pemesanan</h3>
-          <p>Massa ultrices blandit elit blandit. Eu maecenas bibendum</p>
+          <h3 class="text-2xl font-bold font-merriweather">Pesan</h3>
+          <p>Pemesanan cepat dan negosiasi mudah via WhatsApp</p>
           <img
             src="./assets/flow-line.svg"
             alt="line"
@@ -457,7 +461,10 @@
             height="100"
           />
           <h3 class="text-2xl font-bold font-merriweather">Bayar</h3>
-          <p>Massa ultrices blandit elit blandit. Eu maecenas bibendum</p>
+          <p>
+            Pembayaran dengan mudah dan aman melalui transfer bank atau
+            e-wallet.
+          </p>
           <img
             src="./assets/flow-line.svg"
             alt="line"
@@ -482,14 +489,17 @@
             width="100"
             height="100"
           />
-          <h3 class="text-2xl font-bold font-merriweather">Kirim</h3>
-          <p>Massa ultrices blandit elit blandit. Eu maecenas bibendum</p>
+          <h3 class="text-2xl font-bold font-merriweather">Pengiriman</h3>
+          <p>
+            Pengiriman aman, cepat, dan terpercaya langsung ke tempat tujuan
+            Anda.
+          </p>
         </div>
       </div>
     </section>
-    <section id="review" class="px-8 py-16 lg:py-24 lg:px-40 relative">
+    <section id="review" class="px-8 py-16 lg:py-32 lg:px-40 relative">
       <h1
-        class="text-center lg:text-left text-2xl lg:text-3xl font-bold font-merriweather mb-12 lg:mb-24"
+        class="text-center lg:text-left text-2xl lg:text-3xl font-bold font-merriweather mb-12 lg:mb-16"
       >
         What farmers and distributors say
       </h1>
@@ -501,13 +511,12 @@
           class="review-slide w-full flex-[1_0_100%] grid grid-cols-1 lg:grid-cols-2"
         >
           <div
-            class="rounded-t-[20px] lg:rounded-bl-[20px] lg:rounded-tr-none p-8 lg:py-12 border border-[#7c7c7c] lg:border-[#7c7c7c50]"
+            class="rounded-t-[20px] lg:rounded-bl-[20px] lg:rounded-tr-none p-8 lg:py-12 border-t border-x lg:border border-[#7c7c7c50] flex flex-col justify-between gap-8"
           >
-            <p class="mb-8 text-lg">
-              “Website adalah platform yang sangat membantu saya untuk
-              meningkatkan penjualan apel saya. Dengan Website, saya dapat
-              menjangkau lebih banyak distributor dan mendapatkan harga yang
-              lebih baik.”
+            <p class="text-lg">
+              “Sangat senang menggunakan platform ini! Memudahkan saya dalam
+              melacak stok, mengelola pesanan, dan bahkan memberikan saran
+              terkait cuaca. Fitur pemantauan tanaman sangat membantu.”
             </p>
             <div class="flex gap-4 items-center">
               <img
@@ -526,17 +535,16 @@
             </div>
           </div>
           <div
-            class="rounded-b-[20px] lg:rounded-bl-none lg:rounded-tr-[20px] p-8 lg:py-12 border border-[#7c7c7c] lg:border-[#7c7c7c50] bg-[#66BF6B] text-white"
+            class="rounded-b-[20px] lg:rounded-bl-none lg:rounded-tr-[20px] p-8 lg:py-12 border-b border-x lg:border border-[#7c7c7c50] bg-[#66BF6B] text-white flex flex-col justify-between gap-8"
           >
-            <p class="mb-8 text-lg">
-              “Website adalah platform yang sangat membantu saya untuk
-              meningkatkan penjualan apel saya. Dengan Website, saya dapat
-              menjangkau lebih banyak distributor dan mendapatkan harga yang
-              lebih baik.”
+            <p class="text-lg">
+              “Pengalaman yang luar biasa. Sistem manajemen inventarisnya sangat
+              canggih. Pesanan kami lebih teratur, dan integrasi dengan petani
+              membuat rantai pasokan menjadi lebih efisien.”
             </p>
             <div class="flex gap-4 items-center">
               <img
-                src="./assets/didi.svg"
+                src="./assets/budi.png"
                 alt="didi"
                 width="120"
                 height="120"
@@ -555,13 +563,12 @@
           class="review-slide w-full flex-[1_0_100%] grid grid-cols-1 lg:grid-cols-2"
         >
           <div
-            class="rounded-t-[20px] lg:rounded-bl-[20px] lg:rounded-tr-none p-8 lg:py-12 border border-[#7c7c7c] lg:border-[#7c7c7c50]"
+            class="rounded-t-[20px] lg:rounded-bl-[20px] lg:rounded-tr-none p-8 lg:py-12 border-t border-x lg:border border-[#7c7c7c50] flex flex-col justify-between gap-8"
           >
-            <p class="mb-8 text-lg">
-              “Website adalah platform yang sangat membantu saya untuk
-              meningkatkan penjualan apel saya. Dengan Website, saya dapat
-              menjangkau lebih banyak distributor dan mendapatkan harga yang
-              lebih baik.”
+            <p class="text-lg">
+              “Aplikasi ini mengubah cara saya berbisnis. Saya bisa memantau
+              harga pasar, merencanakan penanaman, dan berkomunikasi dengan
+              distributor dalam satu tempat. Sangat merekomendasikan!”
             </p>
             <div class="flex gap-4 items-center">
               <img
@@ -580,17 +587,16 @@
             </div>
           </div>
           <div
-            class="rounded-b-[20px] lg:rounded-bl-none lg:rounded-tr-[20px] p-8 lg:py-12 border border-[#7c7c7c] lg:border-[#7c7c7c50] bg-[#66BF6B] text-white"
+            class="rounded-b-[20px] lg:rounded-bl-none lg:rounded-tr-[20px] p-8 lg:py-12 border-b border-x lg:border border-[#7c7c7c50] bg-[#66BF6B] text-white flex flex-col justify-between gap-8"
           >
-            <p class="mb-8 text-lg">
-              “Website adalah platform yang sangat membantu saya untuk
-              meningkatkan penjualan apel saya. Dengan Website, saya dapat
-              menjangkau lebih banyak distributor dan mendapatkan harga yang
-              lebih baik.”
+            <p class="text-lg">
+              “Sistem ini membantu kami memahami kebutuhan petani dengan lebih
+              baik. Kami dapat merespon permintaan dengan cepat dan
+              mengoptimalkan pengiriman. Platform yang sangat bermanfaat.”
             </p>
             <div class="flex gap-4 items-center">
               <img
-                src="./assets/didi.svg"
+                src="./assets/budi.png"
                 alt="didi"
                 width="120"
                 height="120"
@@ -609,13 +615,12 @@
           class="review-slide w-full flex-[1_0_100%] grid grid-cols-1 lg:grid-cols-2"
         >
           <div
-            class="rounded-t-[20px] lg:rounded-bl-[20px] lg:rounded-tr-none p-8 lg:py-12 border border-[#7c7c7c] lg:border-[#7c7c7c50]"
+            class="rounded-t-[20px] lg:rounded-bl-[20px] lg:rounded-tr-none p-8 lg:py-12 border-t border-x lg:border border-[#7c7c7c50] flex flex-col justify-between gap-8"
           >
-            <p class="mb-8 text-lg">
-              “Website adalah platform yang sangat membantu saya untuk
-              meningkatkan penjualan apel saya. Dengan Website, saya dapat
-              menjangkau lebih banyak distributor dan mendapatkan harga yang
-              lebih baik.”
+            <p class="text-lg">
+              “Luar biasa! Saya dapat melacak penggunaan pupuk dan pestisida,
+              menghemat biaya, dan meningkatkan hasil panen. Fitur analisis
+              tanahnya sangat membantu dalam pengambilan keputusan.”
             </p>
             <div class="flex gap-4 items-center">
               <img
@@ -634,17 +639,16 @@
             </div>
           </div>
           <div
-            class="rounded-b-[20px] lg:rounded-bl-none lg:rounded-tr-[20px] p-8 lg:py-12 border border-[#7c7c7c] lg:border-[#7c7c7c50] bg-[#66BF6B] text-white"
+            class="rounded-b-[20px] lg:rounded-bl-none lg:rounded-tr-[20px] p-8 lg:py-12 border-b border-x lg:border border-[#7c7c7c50] bg-[#66BF6B] text-white flex flex-col justify-between gap-8"
           >
-            <p class="mb-8 text-lg">
-              “Website adalah platform yang sangat membantu saya untuk
-              meningkatkan penjualan apel saya. Dengan Website, saya dapat
-              menjangkau lebih banyak distributor dan mendapatkan harga yang
-              lebih baik.”
+            <p class="text-lg">
+              “Mudah berkolaborasi dengan petani melalui platform ini. Informasi
+              mengenai kebutuhan tanaman membantu kami menyediakan produk yang
+              sesuai. Transparansi data juga memberikan kepercayaan.”
             </p>
             <div class="flex gap-4 items-center">
               <img
-                src="./assets/didi.svg"
+                src="./assets/budi.png"
                 alt="didi"
                 width="120"
                 height="120"
@@ -663,13 +667,12 @@
           class="review-slide w-full flex-[1_0_100%] grid grid-cols-1 lg:grid-cols-2"
         >
           <div
-            class="rounded-t-[20px] lg:rounded-bl-[20px] lg:rounded-tr-none p-8 lg:py-12 border border-[#7c7c7c] lg:border-[#7c7c7c50]"
+            class="rounded-t-[20px] lg:rounded-bl-[20px] lg:rounded-tr-none p-8 lg:py-12 border-t border-x lg:border border-[#7c7c7c50] flex flex-col justify-between gap-8"
           >
-            <p class="mb-8 text-lg">
-              “Website adalah platform yang sangat membantu saya untuk
-              meningkatkan penjualan apel saya. Dengan Website, saya dapat
-              menjangkau lebih banyak distributor dan mendapatkan harga yang
-              lebih baik.”
+            <p class="text-lg">
+              “Sistem manajemen keuangan yang sangat baik. Saya dapat mengelola
+              pengeluaran dengan mudah dan melihat laporan keuangan secara
+              real-time. Terima kasih atas kemudahan ini!”
             </p>
             <div class="flex gap-4 items-center">
               <img
@@ -688,17 +691,69 @@
             </div>
           </div>
           <div
-            class="rounded-b-[20px] lg:rounded-bl-none lg:rounded-tr-[20px] p-8 lg:py-12 border border-[#7c7c7c] lg:border-[#7c7c7c50] bg-[#66BF6B] text-white"
+            class="rounded-b-[20px] lg:rounded-bl-none lg:rounded-tr-[20px] p-8 lg:py-12 border-b border-x lg:border border-[#7c7c7c50] bg-[#66BF6B] text-white flex flex-col justify-between gap-8"
           >
-            <p class="mb-8 text-lg">
-              “Website adalah platform yang sangat membantu saya untuk
-              meningkatkan penjualan apel saya. Dengan Website, saya dapat
-              menjangkau lebih banyak distributor dan mendapatkan harga yang
-              lebih baik.”
+            <p class="text-lg">
+              “Penting untuk mengelola keuangan dengan baik. Platform ini
+              membantu dalam pelacakan transaksi, tagihan, dan pembayaran.
+              Kolaborasi yang lebih efisien untuk keberlanjutan bisnis.”
+            </p>
+            <div class="flex gap-4 items-center">
+              <img
+                src="./assets/budi.png"
+                alt="didi"
+                width="120"
+                height="120"
+                class="lg:w-20"
+              />
+              <div>
+                <h3 class="font-merriweather font-bold text-xl mb-1">
+                  Pak Budi
+                </h3>
+                <p class="text-[#d1d1d1]">Distributor Apel PT Sehat Makmur</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="review-slide w-full flex-[1_0_100%] grid grid-cols-1 lg:grid-cols-2"
+        >
+          <div
+            class="rounded-t-[20px] lg:rounded-bl-[20px] lg:rounded-tr-none p-8 lg:py-12 border-t border-x lg:border border-[#7c7c7c50] flex flex-col justify-between gap-8"
+          >
+            <p class="text-lg">
+              “Fitur pemesanan online sangat membantu saya mendapatkan pembeli
+              untuk hasil panen saya. Prosesnya cepat dan efisien. Saya merasa
+              lebih terhubung dengan pasar.”
             </p>
             <div class="flex gap-4 items-center">
               <img
                 src="./assets/didi.svg"
+                alt="didi"
+                width="120"
+                height="120"
+                class="lg:w-20"
+              />
+              <div>
+                <h3 class="font-merriweather font-bold text-xl mb-1">
+                  Pak Didi
+                </h3>
+                <p class="text-[#7c7c7c]">Petani Apel PT Sehat Makmur</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-b-[20px] lg:rounded-bl-none lg:rounded-tr-[20px] p-8 lg:py-12 border-b border-x lg:border border-[#7c7c7c50] bg-[#66BF6B] text-white flex flex-col justify-between gap-8"
+          >
+            <p class="text-lg">
+              “Sistem pemesanan yang terintegrasi membuat proses bisnis kami
+              lebih efisien. Pemesanan dari petani langsung tercatat, dan kami
+              dapat dengan mudah merespon permintaan pasar. Platform yang sangat
+              baik.”
+            </p>
+            <div class="flex gap-4 items-center">
+              <img
+                src="./assets/budi.png"
                 alt="didi"
                 width="120"
                 height="120"
@@ -714,7 +769,7 @@
           </div>
         </div>
       </div>
-      <div class="flex gap-3 justify-end lg:absolute top-20 right-40">
+      <div class="flex gap-3 justify-end lg:absolute top-28 right-40">
         <button id="prev-review">
           <img
             src="./assets/product-carousel-prev.svg"
@@ -756,12 +811,11 @@
           class="answer max-h-0 pt-0 duration-300 ease-linear overflow-hidden flex gap-8 text-base font-normal"
         >
           <div class="basis-[10%]"></div>
-          <p class="basis-[85%]">
+          <p class="basis-[90%]">
             appletreeat adalah platform digital yang menyediakan solusi
             terintegrasi bagi pelaku industri pertanian, termasuk petani dan
             distributor, untuk mengelola bisnis mereka secara efisien.
           </p>
-          <div class="basis-[5%]"></div>
         </div>
       </div>
       <div
@@ -769,9 +823,7 @@
       >
         <button class="question w-full block flex items-center gap-8 text-left">
           <span class="basis-[10%]">02</span>
-          <span class="basis-[80%]"
-            >Bagaimana peran teknologi dalam pertanian apel?</span
-          >
+          <span class="basis-[80%]">Peran teknologi dalam pertanian?</span>
           <span class="basis-[10%] flex justify-end">
             <i class="ph ph-caret-down expand-btn text-2xl"></i>
           </span>
@@ -780,15 +832,11 @@
           class="answer max-h-0 pt-0 duration-300 ease-linear overflow-hidden flex gap-8 text-base font-normal"
         >
           <div class="basis-[10%]"></div>
-          <p class="basis-[85%]">
+          <p class="basis-[90%]">
             Teknologi memiliki peran krusial dalam pertanian apel. Penggunaan
             teknologi canggih, seperti sensor dan analitik data, memungkinkan
-            para petani untuk memantau kondisi tanaman secara real-time,
-            mengoptimalkan penggunaan sumber daya seperti air dan pupuk, serta
-            mengidentifikasi masalah tanaman dengan cepat. Hal ini membantu
-            meningkatkan efisiensi dan hasil panen.
+            para petani untuk memantau kondisi tanaman
           </p>
-          <div class="basis-[5%]"></div>
         </div>
       </div>
       <div
@@ -796,9 +844,7 @@
       >
         <button class="question w-full block flex items-center gap-8 text-left">
           <span class="basis-[10%]">03</span>
-          <span class="basis-[80%]"
-            >Apa tantangan utama dalam pertanian apel?</span
-          >
+          <span class="basis-[80%]">Tantangan utama dalam pertanian?</span>
           <span class="basis-[10%] flex justify-end">
             <i class="ph ph-caret-down expand-btn text-2xl"></i>
           </span>
@@ -807,14 +853,11 @@
           class="answer max-h-0 pt-0 duration-300 ease-linear overflow-hidden flex gap-8 text-base font-normal"
         >
           <div class="basis-[10%]"></div>
-          <p class="basis-[85%]">
+          <p class="basis-[90%]">
             Tantangan utama dalam pertanian apel meliputi fluktuasi cuaca yang
-            dapat mempengaruhi pertumbuhan tanaman, serangan hama dan penyakit
-            tanaman, perubahan iklim yang memengaruhi kualitas hasil panen,
-            serta kebutuhan akan manajemen yang tepat untuk pemeliharaan tanaman
-            agar tetap sehat.
+            dapat mempengaruhi pertumbuhan tanaman, serangan hama dan penyakit,
+            perubahan iklim dan cuaca
           </p>
-          <div class="basis-[5%]"></div>
         </div>
       </div>
       <div
@@ -822,9 +865,7 @@
       >
         <button class="question w-full block flex items-center gap-8 text-left">
           <span class="basis-[10%]">04</span>
-          <span class="basis-[80%]"
-            >Bagaimana inovasi membantu petani apel?</span
-          >
+          <span class="basis-[80%]">Apakah inovasi dapat membantu?</span>
           <span class="basis-[10%] flex justify-end">
             <i class="ph ph-caret-down expand-btn text-2xl"></i>
           </span>
@@ -833,14 +874,11 @@
           class="answer max-h-0 pt-0 duration-300 ease-linear overflow-hidden flex gap-8 text-base font-normal"
         >
           <div class="basis-[10%]"></div>
-          <p class="basis-[85%]">
+          <p class="basis-[90%]">
             Inovasi dalam pertanian apel membawa solusi bagi petani dalam
             menghadapi tantangan. Teknologi baru seperti sistem irigasi yang
-            cerdas, penggunaan pestisida organik, dan pengembangan varietas apel
-            yang tahan terhadap kondisi lingkungan tertentu, semuanya membantu
-            meningkatkan hasil panen dan produktivitas.
+            cerdas, penggunaan pestisida organik
           </p>
-          <div class="basis-[5%]"></div>
         </div>
       </div>
       <div
@@ -848,9 +886,7 @@
       >
         <button class="question w-full block flex items-center gap-8 text-left">
           <span class="basis-[10%]">05</span>
-          <span class="basis-[80%]"
-            >Mengapa pemeliharaan tanaman apel penting?</span
-          >
+          <span class="basis-[80%]">Pemeliharaan tanaman apel?</span>
           <span class="basis-[10%] flex justify-end">
             <i class="ph ph-caret-down expand-btn text-2xl"></i>
           </span>
@@ -859,18 +895,15 @@
           class="answer max-h-0 pt-0 duration-300 ease-linear overflow-hidden flex gap-8 text-base font-normal"
         >
           <div class="basis-[10%]"></div>
-          <p class="basis-[85%]">
+          <p class="basis-[90%]">
             Pemeliharaan tanaman apel penting karena itu merupakan langkah
             krusial dalam menjaga kesehatan dan kualitas tanaman. Perawatan yang
-            tepat membantu mencegah serangan hama dan penyakit, menjaga
-            kesuburan tanah, dan memastikan pertumbuhan tanaman yang optimal
-            untuk menghasilkan buah berkualitas tinggi.
+            tepat membantu mencegah serangan hama
           </p>
-          <div class="basis-[5%]"></div>
         </div>
       </div>
     </section>
-    <section id="blog" class="py-16">
+    <section id="blog" class="py-16 lg:py-32">
       <h4 class="text-[#66BF6B] text-center mb-4">OUR BLOG</h4>
       <h1
         class="font-merriweather font-bold text-2xl lg:text-3xl text-center mb-12"
@@ -879,7 +912,7 @@
       </h1>
       <div
         id="blog-carousel"
-        class="carousel pb-8 lg:pb-12 flex gap-8 overflow-scroll mx-8 mb-12 scroll-smooth"
+        class="carousel pb-8 lg:pb-12 flex gap-8 overflow-scroll mx-8 mb-12 lg:mb-16 scroll-smooth"
       >
         <div class="blog-slide basis-full lg:basis-[380px] flex-none space-y-3">
           <img
@@ -1024,22 +1057,11 @@
           </p>
         </div>
       </div>
-      <div class="flex justify-between lg:justify-normal lg:gap-4 px-8">
-        <button id="prev-blog">
-          <img
-            src="./assets/product-carousel-prev.svg"
-            alt="prev"
-            width="56"
-            height="56"
-          />
-        </button>
-        <button id="next-blog">
-          <img
-            src="./assets/product-carousel-next.svg"
-            alt="next"
-            width="56"
-            height="56"
-          />
+      <div class="flex justify-center">
+        <button
+          class="px-6 py-3 text-white text-xl bg-[#66BF6B] rounded-[30px]"
+        >
+          See more articles
         </button>
       </div>
     </section>
@@ -1052,7 +1074,7 @@
         alt="appletreeat"
         width="600"
         height="600"
-        class="absolute top-28 right-0 hidden lg:inline-block"
+        class="absolute top-14 right-0 hidden lg:inline-block"
       />
       <div class="space-y-8 lg:w-[50%]">
         <h1 class="font-merriweather text-3xl lg:text-4xl text-white">
@@ -1070,7 +1092,7 @@
     </section>
     <section
       id="footer"
-      class="px-8 lg:px-16 py-16 lg:pt-24 lg:pb-8 text-[#7c7c7c]"
+      class="px-8 lg:px-40 py-16 lg:pt-24 lg:pb-8 text-[#7c7c7c]"
     >
       <div class="lg:flex justify-between items-start mb-16 lg:mb-24">
         <div class="mb-20 lg:mb-0 lg:w-[280px]">

@@ -17,6 +17,13 @@ window.addEventListener("scroll", () => {
 const openNavbar = document.getElementById("open-navbar");
 const closeNavbar = document.getElementById("close-navbar");
 const navbarSection = document.getElementById("mobile-navbar");
+const navLinks = document.getElementsByClassName("nav-link");
+
+function closeNav() {
+  document.body.style.overflowY = "auto";
+  navbarSection.classList.remove("left-0");
+  navbarSection.classList.add("left-[150%]");
+}
 
 openNavbar.addEventListener("click", () => {
   document.body.style.overflowY = "hidden";
@@ -24,11 +31,11 @@ openNavbar.addEventListener("click", () => {
   navbarSection.classList.add("left-0");
 });
 
-closeNavbar.addEventListener("click", () => {
-  document.body.style.overflowY = "auto";
-  navbarSection.classList.remove("left-0");
-  navbarSection.classList.add("left-[150%]");
-});
+closeNavbar.addEventListener("click", closeNav);
+
+for (let i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener("click", closeNav);
+}
 
 // carousel
 
@@ -75,29 +82,21 @@ for (let i = 0; i < question.length; i++) {
       expandBtn[i].classList.remove("ph-caret-down");
       expandBtn[i].classList.add("ph-caret-up");
       answer[i].classList.remove("max-h-0", "pt-0");
-      answer[i].classList.add("max-h-[28rem]", "lg:max-h-[8rem]", "pt-6");
+      answer[i].classList.add("max-h-[11rem]", "lg:max-h-[5rem]", "pt-6");
     } else {
       expandBtn[i].classList.remove("ph-caret-up");
       expandBtn[i].classList.add("ph-caret-down");
-      answer[i].classList.remove("max-h-[28rem]", "lg:max-h-[8rem]", "pt-6");
+      answer[i].classList.remove("max-h-[11rem]", "lg:max-h-[5rem]", "pt-6");
       answer[i].classList.add("max-h-0", "pt-0");
     }
   });
 }
 
-// review carousel
+// to top
+const toTop = document.getElementsByClassName("to-top");
 
-const blogCarousel = document.getElementById("blog-carousel");
-const prevBtnBlog = document.getElementById("prev-blog");
-const nextBtnBlog = document.getElementById("next-blog");
-const slideBlog = document.querySelector(".blog-slide");
-
-prevBtnBlog.addEventListener("click", () => {
-  const slideWidth = slideBlog.clientWidth;
-  blogCarousel.scrollLeft -= slideWidth + 32;
-});
-
-nextBtnBlog.addEventListener("click", () => {
-  const slideWidth = slideBlog.clientWidth;
-  blogCarousel.scrollLeft += slideWidth + 32;
-});
+for (let i = 0; i < toTop.length; i++) {
+  toTop[i].addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
