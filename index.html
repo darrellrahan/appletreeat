@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,7 +15,7 @@
     <link href="./output.css" rel="stylesheet" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
-  <body class="font-mulish">
+  <body class="font-mulish scroll-smooth">
     <section
       id="header"
       class="fixed top-0 inset-x-0 p-8 flex justify-between items-center z-50 duration-300 ease-linear"
@@ -35,18 +35,46 @@
           >
         </div>
         <hr class="w-[1px] h-[45px] bg-[#7C7C7C] hidden lg:inline-block" />
-        <button class="to-top text-lg hidden lg:inline-block">Home</button>
-        <a class="text-lg hidden lg:inline-block" href="#features">Features</a>
-        <a class="text-lg hidden lg:inline-block" href="#products">Products</a>
-        <a class="text-lg hidden lg:inline-block" href="#order">Order</a>
-        <a class="text-lg hidden lg:inline-block" href="#review">Review</a>
-        <a class="text-lg hidden lg:inline-block" href="#faq">FAQ</a>
-        <a class="text-lg hidden lg:inline-block" href="#blog">Blog</a>
+        <button
+          class="to-top text-lg hidden lg:inline-block relative after:absolute after:-bottom-[1.5px] after:w-0 hover:after:w-full after:inset-x-0 after:h-[1.5px] after:duration-300 after:ease-linear after:bg-black"
+        >
+          Beranda
+        </button>
+        <a
+          class="text-lg hidden lg:inline-block relative after:absolute after:-bottom-[1.5px] after:w-0 hover:after:w-full after:inset-x-0 after:h-[1.5px] after:duration-300 after:ease-linear after:bg-black"
+          href="#features"
+          >Fitur</a
+        >
+        <a
+          class="text-lg hidden lg:inline-block relative after:absolute after:-bottom-[1.5px] after:w-0 hover:after:w-full after:inset-x-0 after:h-[1.5px] after:duration-300 after:ease-linear after:bg-black"
+          href="#products"
+          >Produk</a
+        >
+        <a
+          class="text-lg hidden lg:inline-block relative after:absolute after:-bottom-[1.5px] after:w-0 hover:after:w-full after:inset-x-0 after:h-[1.5px] after:duration-300 after:ease-linear after:bg-black"
+          href="#order"
+          >Pesan</a
+        >
+        <a
+          class="text-lg hidden lg:inline-block relative after:absolute after:-bottom-[1.5px] after:w-0 hover:after:w-full after:inset-x-0 after:h-[1.5px] after:duration-300 after:ease-linear after:bg-black"
+          href="#review"
+          >Ulasan</a
+        >
+        <a
+          class="text-lg hidden lg:inline-block relative after:absolute after:-bottom-[1.5px] after:w-0 hover:after:w-full after:inset-x-0 after:h-[1.5px] after:duration-300 after:ease-linear after:bg-black"
+          href="#faq"
+          >FAQ</a
+        >
+        <a
+          class="text-lg hidden lg:inline-block relative after:absolute after:-bottom-[1.5px] after:w-0 hover:after:w-full after:inset-x-0 after:h-[1.5px] after:duration-300 after:ease-linear after:bg-black"
+          href="#blog"
+          >Artikel</a
+        >
       </div>
       <button
-        class="px-6 py-2 text-xl border-[1.5px] border-black rounded-[30px] hidden lg:inline-block"
+        class="px-6 py-2 text-xl border-[1.5px] border-black rounded-[30px] hidden lg:inline-block hover:bg-[#66BF6B] hover:border-[#66BF6B] hover:text-white duration-300 ease-linear"
       >
-        Contact us
+        Hubungi kami
       </button>
       <button id="open-navbar" class="lg:hidden">
         <i class="ph ph-list text-[3rem]"></i>
@@ -69,22 +97,22 @@
         </button>
       </div>
       <div class="flex flex-col gap-4 text-3xl items-start">
-        <button class="to-top nav-link">Home</button>
-        <a class="nav-link" href="#features">Features</a>
-        <a class="nav-link" href="#products">Products</a>
-        <a class="nav-link" href="#order">Order</a>
-        <a class="nav-link" href="#review">Review</a>
+        <button class="to-top nav-link">Beranda</button>
+        <a class="nav-link" href="#features">Fitur</a>
+        <a class="nav-link" href="#products">Produk</a>
+        <a class="nav-link" href="#order">Pesan</a>
+        <a class="nav-link" href="#review">Ulasan</a>
         <a class="nav-link" href="#faq">FAQ</a>
-        <a class="nav-link" href="#blog">Blog</a>
+        <a class="nav-link" href="#blog">Artikel</a>
       </div>
       <div>
-        <h3 class="text-xl font-medium mb-2">Contact us</h3>
+        <h3 class="text-xl font-medium mb-2">Hubungi kami</h3>
         <p class="text-[#7c7c7c]">
           contact@appletreeat.id
           <br />
           +62 12345678
           <br />
-          Jl. Kliningan No.6, Turangga
+          Jl Kliningan No.6, Turangga
           <br />
           Bandung, 40264
         </p>
@@ -92,23 +120,24 @@
     </section>
     <section
       id="hero"
-      class="h-screen bg-[url(./assets/hero-bg.jpg)] bg-cover relative flex justify-center lg:py-52 py-44"
+      class="h-screen bg-[url(./assets/hero-bg.svg)] bg-cover bg-center relative flex justify-center lg:py-52 py-44"
     >
       <div class="w-[350px] lg:w-[750px] z-10">
         <h1
-          class="font-merriweather text-2xl lg:text-4xl font-bold text-center mb-6 lg:leading-snug"
+          class="font-merriweather text-xl lg:text-4xl font-bold text-center mb-6 leading-relaxed lg:leading-relaxed"
         >
-          Supplying premium and freshly harvested apples for your business needs
+          Kesegaran Apel Malang <br />
+          Untuk Hampers Spesial Anda!
         </h1>
         <p class="text-center lg:text-xl mb-10">
-          At appletreeat, we offer a platform as a seamless bridge connecting
-          apple orchard owners in Malang with your business.
+          Kami menghadirkan kualitas dan kelezatan segar langsung dari kebun
+          apel terbaik di Malang dalam setiap hampers kami.
         </p>
         <div class="flex justify-center">
           <button
-            class="px-6 py-3 text-white text-xl bg-[#66BF6B] rounded-[30px]"
+            class="px-6 py-3 text-white text-xl bg-[#66BF6B] rounded-[30px] hover:scale-90 duration-300 ease-linear"
           >
-            Explore how we work
+            Lihat produk
           </button>
         </div>
       </div>
@@ -117,11 +146,11 @@
       ></div>
     </section>
     <section id="features" class="px-8 py-32">
-      <h4 class="text-center text-[#66BF6B] mb-4 lg:mb-2">FEATURED</h4>
+      <h4 class="text-center text-[#66BF6B] mb-4 lg:mb-2">FITUR</h4>
       <h1
         class="font-merriweather font-bold text-2xl lg:text-3xl text-center mb-12 lg:mb-16"
       >
-        Why we're different
+        Mengapa Kami Berbeda?
       </h1>
       <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-4">
         <div
@@ -134,62 +163,73 @@
             height="24"
           />
           <p class="text-lg font-merriweather text-white">
-            Best Apple Market.<br />We offer the best prices for your business.
+            Kualitas Buah Terbaik.<br />Pengalaman Segar dari Kebun Apel
+            Pilihan.
           </p>
-          <button class="py-2 px-4 bg-white rounded-[30px]">Get Started</button>
+          <button
+            class="py-2 px-4 bg-white rounded-[30px] hover:scale-90 duration-300 ease-linear"
+          >
+            Beli hampers
+          </button>
           <img
-            src="./assets/featured-phone-1.svg"
+            src="./assets/feature-1.svg"
             alt="phone"
-            width="100"
-            height="165"
-            class="absolute -bottom-6 right-6"
+            width="220"
+            height="220"
+            class="absolute -bottom-16 -right-12 lg:right-0"
           />
         </div>
         <div
           class="rounded-lg bg-[url(./assets/featured-bg-2.svg)] p-8 bg-cover relative overflow-hidden h-[280px] flex items-end"
         >
           <div class="font-merriweather">
-            <h4 class="text-[#66BF6B] text-xl font-bold">Solid Community</h4>
-            <p class="text-[#7c7c7c] text-lg">Live business update</p>
+            <h4 class="text-[#66BF6B] text-xl font-bold mb-1">
+              Pemesanan Mudah
+            </h4>
+            <p class="text-[#7c7c7c] text-lg">
+              Pengalaman belanja menyenangkan
+            </p>
           </div>
           <img
-            src="./assets/featured-phone-2.svg"
+            src="./assets/feature-2.svg"
             alt="phone"
-            width="100"
-            height="165"
-            class="absolute -top-32 right-6"
+            width="150"
+            height="150"
+            class="absolute -top-40 -right-8"
           />
         </div>
         <div
           class="rounded-lg bg-[url(./assets/featured-bg-3.svg)] p-8 bg-cover relative overflow-hidden h-[280px] flex items-start"
         >
           <div class="font-merriweather">
-            <h4 class="text-[#66BF6B] text-xl font-bold">Easy Ordering</h4>
-            <p class="text-[#7c7c7c] text-lg">With one click</p>
+            <h4 class="text-[#66BF6B] text-xl font-bold mb-1">
+              Kemasan Khusus
+            </h4>
+            <p class="text-[#7c7c7c] text-lg">Untuk hampers spesial anda</p>
           </div>
           <img
-            src="./assets/featured-phone-3.svg"
+            src="./assets/feature-3.svg"
             alt="phone"
-            width="1000"
-            height="1000"
-            class="absolute -bottom-28 -left-8"
+            width="150"
+            height="150"
+            class="absolute -bottom-4 inset-x-1/2 -translate-x-1/2"
           />
         </div>
         <div
           class="rounded-lg bg-[url(./assets/featured-bg-4.svg)] p-8 bg-cover relative overflow-hidden h-[280px] flex items-end"
         >
           <div class="font-merriweather">
-            <h4 class="text-[#66BF6B] text-xl font-bold">
-              History of Apple Planting
+            <h4 class="text-[#66BF6B] text-xl font-bold mb-1">
+              Pengiriman Cepat
             </h4>
-            <p class="text-[#7c7c7c] text-lg">Choose quality wisely</p>
+            <p class="text-[#7c7c7c] text-lg">Pengiriman cepat dan aman</p>
           </div>
           <img
-            src="./assets/featured-phone-4.svg"
+            src="./assets/feature-4.svg"
             alt="phone"
-            width="1000"
-            height="1000"
-            class="absolute -top-20 left-4"
+            width="200"
+            height="200"
+            class="absolute -top-12 -right-8"
           />
         </div>
       </div>
@@ -197,158 +237,788 @@
     <section id="products" class="px-8 pb-16 lg:py-16">
       <div class="mb-12 lg:mb-16 lg:flex justify-between items-center">
         <div class="mb-12 lg:mb-0">
-          <h4 class="text-[#66BF6B] mb-4 lg:mb-2">OUR PRODUCTS</h4>
+          <h4 class="text-[#66BF6B] mb-4 lg:mb-2">PRODUK KAMI</h4>
           <h1 class="font-merriweather font-bold text-2xl lg:text-3xl">
-            Find the best apple <br />
-            for your needs
+            Temukan Hampers <br />
+            Terbaik Untuk Anda
           </h1>
         </div>
         <p class="font-semibold lg:w-[650px] lg:text-lg">
-          Our products are brought directly from apple orchard farmers in
-          Malang, ensuring unmatched quality and quantity.
+          Produk kami diperoleh langsung dari petani kebun apel di Malang,
+          menjamin kualitas dan kuantitas yang tak tertandingi.
         </p>
       </div>
       <div
         id="products-carousel"
-        class="carousel pb-8 scroll-smooth h-[250px] lg:h-[320px] lg:gap-4 flex gap-8 overflow-scroll mb-12"
+        class="carousel pb-12 scroll-smooth flex gap-8 overflow-scroll mb-12"
       >
-        <div
-          class="slide basis-full lg:basis-[525px] flex-none h-full bg-[url(./assets/product-1.png)] bg-cover bg-center rounded-[10px] flex items-end p-6 text-white relative"
-        >
-          <div class="z-10 relative w-full">
-            <h3 class="text-xl font-merriweather font-bold mb-2">
-              Agrowisata Kusuma
-            </h3>
-            <p class="text-[#CFCFCF] mb-4">Jalan Abdul Gani Atas, Ngagik</p>
-            <div class="grid grid-cols-2 gap-4">
-              <button
-                class="rounded-[30px] border border-white py-1 text-lg text-center"
-              >
-                Detail
+        <div class="slide basis-full flex-none lg:grid grid-cols-4 gap-4">
+          <div class="space-y-6">
+            <div
+              class="h-[275px] rounded-[20px] bg-[#F1F1F1] flex items-center justify-center relative"
+            >
+              <button class="absolute top-4 right-4">
+                <img
+                  src="./assets/like-product.svg"
+                  alt="like"
+                  width="40"
+                  height="40"
+                />
               </button>
-              <button
-                class="rounded-[30px] border border-[#66BF6B] bg-[#66BF6B] py-1 text-lg text-center"
-              >
-                Contact
-              </button>
+              <img
+                src="./assets/product-1.svg"
+                alt="product"
+                width="180"
+                height="280"
+                class="-translate-x-4"
+              />
             </div>
+            <div class="space-y-2">
+              <h3 class="font-bold text-2xl font-merriweather">
+                Paket Murah Kilat
+              </h3>
+              <div class="flex items-center gap-1 font-merriweather">
+                <span class="text-xs">Rp</span>
+                <span class="font-bold text-2xl">70</span>
+                <span class="text-xs">.000</span>
+              </div>
+              <p class="text-[#7c7c7c] text-lg">
+                Kesegaran alami dalam setiap selai dan sirup apel kami.
+              </p>
+              <div class="flex gap-2">
+                <img
+                  src="./assets/stars.svg"
+                  alt="5 stars"
+                  width="100"
+                  height="16"
+                />
+                <span class="text-[#7c7c7c]">(100)</span>
+              </div>
+            </div>
+            <button
+              class="rounded-[30px] border-[3px] border-[#66BF6B] py-2.5 px-5 font-semibold text-lg text-[#66BF6B]"
+            >
+              Add to cart
+            </button>
           </div>
-          <div class="absolute inset-0 bg-black/40 rounded-[10px]"></div>
+          <div class="space-y-6 hidden lg:block">
+            <div
+              class="h-[275px] rounded-[20px] bg-[#F1F1F1] flex items-center justify-center relative"
+            >
+              <button class="absolute top-4 right-4">
+                <img
+                  src="./assets/like-product.svg"
+                  alt="like"
+                  width="40"
+                  height="40"
+                />
+              </button>
+              <img
+                src="./assets/product-2.svg"
+                alt="product"
+                width="180"
+                height="280"
+                class="-translate-x-4"
+              />
+            </div>
+            <div class="space-y-2">
+              <h3 class="font-bold text-2xl font-merriweather">
+                Paket Lengkap
+              </h3>
+              <div class="flex items-center gap-1 font-merriweather">
+                <span class="text-xs">Rp</span>
+                <span class="font-bold text-2xl">200</span>
+                <span class="text-xs">.000</span>
+              </div>
+              <p class="text-[#7c7c7c] text-lg">
+                Kelezatan buah apel dalam paket lengkap kami.
+              </p>
+              <div class="flex gap-2">
+                <img
+                  src="./assets/stars.svg"
+                  alt="5 stars"
+                  width="100"
+                  height="16"
+                />
+                <span class="text-[#7c7c7c]">(100)</span>
+              </div>
+            </div>
+            <button
+              class="rounded-[30px] border-[3px] border-[#66BF6B] py-2.5 px-5 font-semibold text-lg text-[#66BF6B]"
+            >
+              Add to cart
+            </button>
+          </div>
+          <div class="space-y-6 hidden lg:block">
+            <div
+              class="h-[275px] rounded-[20px] bg-[#F1F1F1] flex items-center justify-center relative"
+            >
+              <button class="absolute top-4 right-4">
+                <img
+                  src="./assets/like-product.svg"
+                  alt="like"
+                  width="40"
+                  height="40"
+                />
+              </button>
+              <img
+                src="./assets/product-3.svg"
+                alt="product"
+                width="180"
+                height="280"
+              />
+            </div>
+            <div class="space-y-2">
+              <h3 class="font-bold text-2xl font-merriweather">
+                Custom Hampers
+              </h3>
+              <div class="flex items-center gap-1 font-merriweather">
+                <span class="text-xs">Rp</span>
+                <span class="font-bold text-2xl">50</span>
+                <span class="text-xs">.000</span>
+              </div>
+              <p class="text-[#7c7c7c] text-lg">
+                Kehangatan setiap momen dengan custom hampers kami.
+              </p>
+              <div class="flex gap-2">
+                <img
+                  src="./assets/stars.svg"
+                  alt="5 stars"
+                  width="100"
+                  height="16"
+                />
+                <span class="text-[#7c7c7c]">(100)</span>
+              </div>
+            </div>
+            <button
+              class="rounded-[30px] border-[3px] border-[#66BF6B] py-2.5 px-5 font-semibold text-lg text-[#66BF6B]"
+            >
+              Add to cart
+            </button>
+          </div>
+          <div class="space-y-6 hidden lg:block">
+            <div
+              class="h-[275px] rounded-[20px] bg-[#F1F1F1] flex items-center justify-center relative"
+            >
+              <button class="absolute top-4 right-4">
+                <img
+                  src="./assets/like-product.svg"
+                  alt="like"
+                  width="40"
+                  height="40"
+                />
+              </button>
+              <img
+                src="./assets/product-4.svg"
+                alt="product"
+                width="180"
+                height="280"
+              />
+            </div>
+            <div class="space-y-2">
+              <h3 class="font-bold text-2xl font-merriweather">
+                Paket Ngumpul
+              </h3>
+              <div class="flex items-center gap-1 font-merriweather">
+                <span class="text-xs">Rp</span>
+                <span class="font-bold text-2xl">350</span>
+                <span class="text-xs">.000</span>
+              </div>
+              <p class="text-[#7c7c7c] text-lg">
+                Kelengkapan rasa buah apel dalam paket keluarga kami.
+              </p>
+              <div class="flex gap-2">
+                <img
+                  src="./assets/stars.svg"
+                  alt="5 stars"
+                  width="100"
+                  height="16"
+                />
+                <span class="text-[#7c7c7c]">(100)</span>
+              </div>
+            </div>
+            <button
+              class="rounded-[30px] border-[3px] border-[#66BF6B] py-2.5 px-5 font-semibold text-lg text-[#66BF6B]"
+            >
+              Add to cart
+            </button>
+          </div>
         </div>
-        <div
-          class="slide basis-full lg:basis-[525px] flex-none h-full bg-[url(./assets/product-2.png)] bg-cover bg-center rounded-[10px] flex items-end p-6 text-white relative"
-        >
-          <div class="z-10 relative w-full">
-            <h3 class="text-xl font-merriweather font-bold mb-2">
-              Agro Rakyat
-            </h3>
-            <p class="text-[#CFCFCF] mb-4">Jl. Raya Sidomulyo</p>
-            <div class="grid grid-cols-2 gap-4">
-              <button
-                class="rounded-[30px] border border-white py-1 text-lg text-center"
-              >
-                Detail
+        <div class="slide basis-full flex-none lg:grid grid-cols-4 gap-4">
+          <div class="space-y-6 hidden lg:block">
+            <div
+              class="h-[275px] rounded-[20px] bg-[#F1F1F1] flex items-center justify-center relative"
+            >
+              <button class="absolute top-4 right-4">
+                <img
+                  src="./assets/like-product.svg"
+                  alt="like"
+                  width="40"
+                  height="40"
+                />
               </button>
-              <button
-                class="rounded-[30px] border border-[#66BF6B] bg-[#66BF6B] py-1 text-lg text-center"
-              >
-                Contact
-              </button>
+              <img
+                src="./assets/product-1.svg"
+                alt="product"
+                width="180"
+                height="280"
+                class="-translate-x-4"
+              />
             </div>
+            <div class="space-y-2">
+              <h3 class="font-bold text-2xl font-merriweather">
+                Paket Murah Kilat
+              </h3>
+              <div class="flex items-center gap-1 font-merriweather">
+                <span class="text-xs">Rp</span>
+                <span class="font-bold text-2xl">70</span>
+                <span class="text-xs">.000</span>
+              </div>
+              <p class="text-[#7c7c7c] text-lg">
+                Kesegaran alami dalam setiap selai dan sirup apel kami.
+              </p>
+              <div class="flex gap-2">
+                <img
+                  src="./assets/stars.svg"
+                  alt="5 stars"
+                  width="100"
+                  height="16"
+                />
+                <span class="text-[#7c7c7c]">(100)</span>
+              </div>
+            </div>
+            <button
+              class="rounded-[30px] border-[3px] border-[#66BF6B] py-2.5 px-5 font-semibold text-lg text-[#66BF6B]"
+            >
+              Add to cart
+            </button>
           </div>
-          <div class="absolute inset-0 bg-black/40 rounded-[10px]"></div>
+          <div class="space-y-6">
+            <div
+              class="h-[275px] rounded-[20px] bg-[#F1F1F1] flex items-center justify-center relative"
+            >
+              <button class="absolute top-4 right-4">
+                <img
+                  src="./assets/like-product.svg"
+                  alt="like"
+                  width="40"
+                  height="40"
+                />
+              </button>
+              <img
+                src="./assets/product-2.svg"
+                alt="product"
+                width="180"
+                height="280"
+                class="-translate-x-4"
+              />
+            </div>
+            <div class="space-y-2">
+              <h3 class="font-bold text-2xl font-merriweather">
+                Paket Lengkap
+              </h3>
+              <div class="flex items-center gap-1 font-merriweather">
+                <span class="text-xs">Rp</span>
+                <span class="font-bold text-2xl">200</span>
+                <span class="text-xs">.000</span>
+              </div>
+              <p class="text-[#7c7c7c] text-lg">
+                Kelezatan buah apel dalam paket lengkap kami.
+              </p>
+              <div class="flex gap-2">
+                <img
+                  src="./assets/stars.svg"
+                  alt="5 stars"
+                  width="100"
+                  height="16"
+                />
+                <span class="text-[#7c7c7c]">(100)</span>
+              </div>
+            </div>
+            <button
+              class="rounded-[30px] border-[3px] border-[#66BF6B] py-2.5 px-5 font-semibold text-lg text-[#66BF6B]"
+            >
+              Add to cart
+            </button>
+          </div>
+          <div class="space-y-6 hidden lg:block">
+            <div
+              class="h-[275px] rounded-[20px] bg-[#F1F1F1] flex items-center justify-center relative"
+            >
+              <button class="absolute top-4 right-4">
+                <img
+                  src="./assets/like-product.svg"
+                  alt="like"
+                  width="40"
+                  height="40"
+                />
+              </button>
+              <img
+                src="./assets/product-3.svg"
+                alt="product"
+                width="180"
+                height="280"
+              />
+            </div>
+            <div class="space-y-2">
+              <h3 class="font-bold text-2xl font-merriweather">
+                Custom Hampers
+              </h3>
+              <div class="flex items-center gap-1 font-merriweather">
+                <span class="text-xs">Rp</span>
+                <span class="font-bold text-2xl">50</span>
+                <span class="text-xs">.000</span>
+              </div>
+              <p class="text-[#7c7c7c] text-lg">
+                Kehangatan setiap momen dengan custom hampers kami.
+              </p>
+              <div class="flex gap-2">
+                <img
+                  src="./assets/stars.svg"
+                  alt="5 stars"
+                  width="100"
+                  height="16"
+                />
+                <span class="text-[#7c7c7c]">(100)</span>
+              </div>
+            </div>
+            <button
+              class="rounded-[30px] border-[3px] border-[#66BF6B] py-2.5 px-5 font-semibold text-lg text-[#66BF6B]"
+            >
+              Add to cart
+            </button>
+          </div>
+          <div class="space-y-6 hidden lg:block">
+            <div
+              class="h-[275px] rounded-[20px] bg-[#F1F1F1] flex items-center justify-center relative"
+            >
+              <button class="absolute top-4 right-4">
+                <img
+                  src="./assets/like-product.svg"
+                  alt="like"
+                  width="40"
+                  height="40"
+                />
+              </button>
+              <img
+                src="./assets/product-4.svg"
+                alt="product"
+                width="180"
+                height="280"
+              />
+            </div>
+            <div class="space-y-2">
+              <h3 class="font-bold text-2xl font-merriweather">
+                Paket Ngumpul
+              </h3>
+              <div class="flex items-center gap-1 font-merriweather">
+                <span class="text-xs">Rp</span>
+                <span class="font-bold text-2xl">350</span>
+                <span class="text-xs">.000</span>
+              </div>
+              <p class="text-[#7c7c7c] text-lg">
+                Kelengkapan rasa buah apel dalam paket keluarga kami.
+              </p>
+              <div class="flex gap-2">
+                <img
+                  src="./assets/stars.svg"
+                  alt="5 stars"
+                  width="100"
+                  height="16"
+                />
+                <span class="text-[#7c7c7c]">(100)</span>
+              </div>
+            </div>
+            <button
+              class="rounded-[30px] border-[3px] border-[#66BF6B] py-2.5 px-5 font-semibold text-lg text-[#66BF6B]"
+            >
+              Add to cart
+            </button>
+          </div>
         </div>
-        <div
-          class="slide basis-full lg:basis-[525px] flex-none h-full bg-[url(./assets/product-3.png)] bg-cover bg-center rounded-[10px] flex items-end p-6 text-white relative"
-        >
-          <div class="z-10 relative w-full">
-            <h3 class="text-xl font-merriweather font-bold mb-2">
-              Kelompok Tani Makmur Abadi
-            </h3>
-            <p class="text-[#CFCFCF] mb-4">Jl. Pangeran Diponegoro</p>
-            <div class="grid grid-cols-2 gap-4">
-              <button
-                class="rounded-[30px] border border-white py-1 text-lg text-center"
-              >
-                Detail
+        <div class="slide basis-full flex-none lg:grid grid-cols-4 gap-4">
+          <div class="space-y-6 hidden lg:block">
+            <div
+              class="h-[275px] rounded-[20px] bg-[#F1F1F1] flex items-center justify-center relative"
+            >
+              <button class="absolute top-4 right-4">
+                <img
+                  src="./assets/like-product.svg"
+                  alt="like"
+                  width="40"
+                  height="40"
+                />
               </button>
-              <button
-                class="rounded-[30px] border border-[#66BF6B] bg-[#66BF6B] py-1 text-lg text-center"
-              >
-                Contact
-              </button>
+              <img
+                src="./assets/product-1.svg"
+                alt="product"
+                width="180"
+                height="280"
+                class="-translate-x-4"
+              />
             </div>
+            <div class="space-y-2">
+              <h3 class="font-bold text-2xl font-merriweather">
+                Paket Murah Kilat
+              </h3>
+              <div class="flex items-center gap-1 font-merriweather">
+                <span class="text-xs">Rp</span>
+                <span class="font-bold text-2xl">70</span>
+                <span class="text-xs">.000</span>
+              </div>
+              <p class="text-[#7c7c7c] text-lg">
+                Kesegaran alami dalam setiap selai dan sirup apel kami.
+              </p>
+              <div class="flex gap-2">
+                <img
+                  src="./assets/stars.svg"
+                  alt="5 stars"
+                  width="100"
+                  height="16"
+                />
+                <span class="text-[#7c7c7c]">(100)</span>
+              </div>
+            </div>
+            <button
+              class="rounded-[30px] border-[3px] border-[#66BF6B] py-2.5 px-5 font-semibold text-lg text-[#66BF6B]"
+            >
+              Add to cart
+            </button>
           </div>
-          <div class="absolute inset-0 bg-black/40 rounded-[10px]"></div>
+          <div class="space-y-6 hidden lg:block">
+            <div
+              class="h-[275px] rounded-[20px] bg-[#F1F1F1] flex items-center justify-center relative"
+            >
+              <button class="absolute top-4 right-4">
+                <img
+                  src="./assets/like-product.svg"
+                  alt="like"
+                  width="40"
+                  height="40"
+                />
+              </button>
+              <img
+                src="./assets/product-2.svg"
+                alt="product"
+                width="180"
+                height="280"
+                class="-translate-x-4"
+              />
+            </div>
+            <div class="space-y-2">
+              <h3 class="font-bold text-2xl font-merriweather">
+                Paket Lengkap
+              </h3>
+              <div class="flex items-center gap-1 font-merriweather">
+                <span class="text-xs">Rp</span>
+                <span class="font-bold text-2xl">200</span>
+                <span class="text-xs">.000</span>
+              </div>
+              <p class="text-[#7c7c7c] text-lg">
+                Kelezatan buah apel dalam paket lengkap kami.
+              </p>
+              <div class="flex gap-2">
+                <img
+                  src="./assets/stars.svg"
+                  alt="5 stars"
+                  width="100"
+                  height="16"
+                />
+                <span class="text-[#7c7c7c]">(100)</span>
+              </div>
+            </div>
+            <button
+              class="rounded-[30px] border-[3px] border-[#66BF6B] py-2.5 px-5 font-semibold text-lg text-[#66BF6B]"
+            >
+              Add to cart
+            </button>
+          </div>
+          <div class="space-y-6">
+            <div
+              class="h-[275px] rounded-[20px] bg-[#F1F1F1] flex items-center justify-center relative"
+            >
+              <button class="absolute top-4 right-4">
+                <img
+                  src="./assets/like-product.svg"
+                  alt="like"
+                  width="40"
+                  height="40"
+                />
+              </button>
+              <img
+                src="./assets/product-3.svg"
+                alt="product"
+                width="180"
+                height="280"
+              />
+            </div>
+            <div class="space-y-2">
+              <h3 class="font-bold text-2xl font-merriweather">
+                Custom Hampers
+              </h3>
+              <div class="flex items-center gap-1 font-merriweather">
+                <span class="text-xs">Rp</span>
+                <span class="font-bold text-2xl">50</span>
+                <span class="text-xs">.000</span>
+              </div>
+              <p class="text-[#7c7c7c] text-lg">
+                Kehangatan setiap momen dengan custom hampers kami.
+              </p>
+              <div class="flex gap-2">
+                <img
+                  src="./assets/stars.svg"
+                  alt="5 stars"
+                  width="100"
+                  height="16"
+                />
+                <span class="text-[#7c7c7c]">(100)</span>
+              </div>
+            </div>
+            <button
+              class="rounded-[30px] border-[3px] border-[#66BF6B] py-2.5 px-5 font-semibold text-lg text-[#66BF6B]"
+            >
+              Add to cart
+            </button>
+          </div>
+          <div class="space-y-6 hidden lg:block">
+            <div
+              class="h-[275px] rounded-[20px] bg-[#F1F1F1] flex items-center justify-center relative"
+            >
+              <button class="absolute top-4 right-4">
+                <img
+                  src="./assets/like-product.svg"
+                  alt="like"
+                  width="40"
+                  height="40"
+                />
+              </button>
+              <img
+                src="./assets/product-4.svg"
+                alt="product"
+                width="180"
+                height="280"
+              />
+            </div>
+            <div class="space-y-2">
+              <h3 class="font-bold text-2xl font-merriweather">
+                Paket Ngumpul
+              </h3>
+              <div class="flex items-center gap-1 font-merriweather">
+                <span class="text-xs">Rp</span>
+                <span class="font-bold text-2xl">350</span>
+                <span class="text-xs">.000</span>
+              </div>
+              <p class="text-[#7c7c7c] text-lg">
+                Kelengkapan rasa buah apel dalam paket keluarga kami.
+              </p>
+              <div class="flex gap-2">
+                <img
+                  src="./assets/stars.svg"
+                  alt="5 stars"
+                  width="100"
+                  height="16"
+                />
+                <span class="text-[#7c7c7c]">(100)</span>
+              </div>
+            </div>
+            <button
+              class="rounded-[30px] border-[3px] border-[#66BF6B] py-2.5 px-5 font-semibold text-lg text-[#66BF6B]"
+            >
+              Add to cart
+            </button>
+          </div>
         </div>
-        <div
-          class="slide basis-full lg:basis-[525px] flex-none h-full bg-[url(./assets/product-1.png)] bg-cover bg-center rounded-[10px] flex items-end p-6 text-white relative"
-        >
-          <div class="z-10 relative w-full">
-            <h3 class="text-xl font-merriweather font-bold mb-2">
-              Apel Mandiri
-            </h3>
-            <p class="text-[#CFCFCF] mb-4">Jl Raya Junggo</p>
-            <div class="grid grid-cols-2 gap-4">
-              <button
-                class="rounded-[30px] border border-white py-1 text-lg text-center"
-              >
-                Detail
+        <div class="slide basis-full flex-none lg:grid grid-cols-4 gap-4">
+          <div class="space-y-6 hidden lg:block">
+            <div
+              class="h-[275px] rounded-[20px] bg-[#F1F1F1] flex items-center justify-center relative"
+            >
+              <button class="absolute top-4 right-4">
+                <img
+                  src="./assets/like-product.svg"
+                  alt="like"
+                  width="40"
+                  height="40"
+                />
               </button>
-              <button
-                class="rounded-[30px] border border-[#66BF6B] bg-[#66BF6B] py-1 text-lg text-center"
-              >
-                Contact
-              </button>
+              <img
+                src="./assets/product-1.svg"
+                alt="product"
+                width="180"
+                height="280"
+                class="-translate-x-4"
+              />
             </div>
-          </div>
-          <div class="absolute inset-0 bg-black/40 rounded-[10px]"></div>
-        </div>
-        <div
-          class="slide basis-full lg:basis-[525px] flex-none h-full bg-[url(./assets/product-2.png)] bg-cover bg-center rounded-[10px] flex items-end p-6 text-white relative"
-        >
-          <div class="z-10 relative w-full">
-            <h3 class="text-xl font-merriweather font-bold mb-2">
-              Green Garden
-            </h3>
-            <p class="text-[#CFCFCF] mb-4">Jl. Raya Tulungrejo</p>
-            <div class="grid grid-cols-2 gap-4">
-              <button
-                class="rounded-[30px] border border-white py-1 text-lg text-center"
-              >
-                Detail
-              </button>
-              <button
-                class="rounded-[30px] border border-[#66BF6B] bg-[#66BF6B] py-1 text-lg text-center"
-              >
-                Contact
-              </button>
+            <div class="space-y-2">
+              <h3 class="font-bold text-2xl font-merriweather">
+                Paket Murah Kilat
+              </h3>
+              <div class="flex items-center gap-1 font-merriweather">
+                <span class="text-xs">Rp</span>
+                <span class="font-bold text-2xl">70</span>
+                <span class="text-xs">.000</span>
+              </div>
+              <p class="text-[#7c7c7c] text-lg">
+                Kesegaran alami dalam setiap selai dan sirup apel kami.
+              </p>
+              <div class="flex gap-2">
+                <img
+                  src="./assets/stars.svg"
+                  alt="5 stars"
+                  width="100"
+                  height="16"
+                />
+                <span class="text-[#7c7c7c]">(100)</span>
+              </div>
             </div>
+            <button
+              class="rounded-[30px] border-[3px] border-[#66BF6B] py-2.5 px-5 font-semibold text-lg text-[#66BF6B]"
+            >
+              Add to cart
+            </button>
           </div>
-          <div class="absolute inset-0 bg-black/40 rounded-[10px]"></div>
-        </div>
-        <div
-          class="slide basis-full lg:basis-[525px] flex-none h-full bg-[url(./assets/product-3.png)] bg-cover bg-center rounded-[10px] flex items-end p-6 text-white relative"
-        >
-          <div class="z-10 relative w-full">
-            <h3 class="text-xl font-merriweather font-bold mb-2">
-              New Mitra Apel
-            </h3>
-            <p class="text-[#CFCFCF] mb-4">Sidomulyo, Kota Batu</p>
-            <div class="grid grid-cols-2 gap-4">
-              <button
-                class="rounded-[30px] border border-white py-1 text-lg text-center"
-              >
-                Detail
+          <div class="space-y-6 hidden lg:block">
+            <div
+              class="h-[275px] rounded-[20px] bg-[#F1F1F1] flex items-center justify-center relative"
+            >
+              <button class="absolute top-4 right-4">
+                <img
+                  src="./assets/like-product.svg"
+                  alt="like"
+                  width="40"
+                  height="40"
+                />
               </button>
-              <button
-                class="rounded-[30px] border border-[#66BF6B] bg-[#66BF6B] py-1 text-lg text-center"
-              >
-                Contact
-              </button>
+              <img
+                src="./assets/product-2.svg"
+                alt="product"
+                width="180"
+                height="280"
+                class="-translate-x-4"
+              />
             </div>
+            <div class="space-y-2">
+              <h3 class="font-bold text-2xl font-merriweather">
+                Paket Lengkap
+              </h3>
+              <div class="flex items-center gap-1 font-merriweather">
+                <span class="text-xs">Rp</span>
+                <span class="font-bold text-2xl">200</span>
+                <span class="text-xs">.000</span>
+              </div>
+              <p class="text-[#7c7c7c] text-lg">
+                Kelezatan buah apel dalam paket lengkap kami.
+              </p>
+              <div class="flex gap-2">
+                <img
+                  src="./assets/stars.svg"
+                  alt="5 stars"
+                  width="100"
+                  height="16"
+                />
+                <span class="text-[#7c7c7c]">(100)</span>
+              </div>
+            </div>
+            <button
+              class="rounded-[30px] border-[3px] border-[#66BF6B] py-2.5 px-5 font-semibold text-lg text-[#66BF6B]"
+            >
+              Add to cart
+            </button>
           </div>
-          <div class="absolute inset-0 bg-black/40 rounded-[10px]"></div>
+          <div class="space-y-6 hidden lg:block">
+            <div
+              class="h-[275px] rounded-[20px] bg-[#F1F1F1] flex items-center justify-center relative"
+            >
+              <button class="absolute top-4 right-4">
+                <img
+                  src="./assets/like-product.svg"
+                  alt="like"
+                  width="40"
+                  height="40"
+                />
+              </button>
+              <img
+                src="./assets/product-3.svg"
+                alt="product"
+                width="180"
+                height="280"
+              />
+            </div>
+            <div class="space-y-2">
+              <h3 class="font-bold text-2xl font-merriweather">
+                Custom Hampers
+              </h3>
+              <div class="flex items-center gap-1 font-merriweather">
+                <span class="text-xs">Rp</span>
+                <span class="font-bold text-2xl">50</span>
+                <span class="text-xs">.000</span>
+              </div>
+              <p class="text-[#7c7c7c] text-lg">
+                Kehangatan setiap momen dengan custom hampers kami.
+              </p>
+              <div class="flex gap-2">
+                <img
+                  src="./assets/stars.svg"
+                  alt="5 stars"
+                  width="100"
+                  height="16"
+                />
+                <span class="text-[#7c7c7c]">(100)</span>
+              </div>
+            </div>
+            <button
+              class="rounded-[30px] border-[3px] border-[#66BF6B] py-2.5 px-5 font-semibold text-lg text-[#66BF6B]"
+            >
+              Add to cart
+            </button>
+          </div>
+          <div class="space-y-6">
+            <div
+              class="h-[275px] rounded-[20px] bg-[#F1F1F1] flex items-center justify-center relative"
+            >
+              <button class="absolute top-4 right-4">
+                <img
+                  src="./assets/like-product.svg"
+                  alt="like"
+                  width="40"
+                  height="40"
+                />
+              </button>
+              <img
+                src="./assets/product-4.svg"
+                alt="product"
+                width="180"
+                height="280"
+              />
+            </div>
+            <div class="space-y-2">
+              <h3 class="font-bold text-2xl font-merriweather">
+                Paket Ngumpul
+              </h3>
+              <div class="flex items-center gap-1 font-merriweather">
+                <span class="text-xs">Rp</span>
+                <span class="font-bold text-2xl">350</span>
+                <span class="text-xs">.000</span>
+              </div>
+              <p class="text-[#7c7c7c] text-lg">
+                Kelengkapan rasa buah apel dalam paket keluarga kami.
+              </p>
+              <div class="flex gap-2">
+                <img
+                  src="./assets/stars.svg"
+                  alt="5 stars"
+                  width="100"
+                  height="16"
+                />
+                <span class="text-[#7c7c7c]">(100)</span>
+              </div>
+            </div>
+            <button
+              class="rounded-[30px] border-[3px] border-[#66BF6B] py-2.5 px-5 font-semibold text-lg text-[#66BF6B]"
+            >
+              Add to cart
+            </button>
+          </div>
         </div>
       </div>
       <div class="flex justify-between items-center">
@@ -370,13 +1040,14 @@
             />
           </button>
         </div>
-        <button class="flex items-center gap-3">
-          <span class="text-lg font-semibold">See all</span>
+        <button class="flex items-center gap-2 lg:gap-3">
+          <span class="font-semibold lg:text-lg">Lihat semua</span>
           <img
             src="./assets/seeall-arrow.svg"
             alt="arrow"
-            width="60"
-            height="10"
+            width="40"
+            height="40"
+            class="lg:w-[60px]"
           />
         </button>
       </div>
