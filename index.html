@@ -156,20 +156,19 @@
       </h1>
       <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-4">
         <div
-          class="lg:col-span-2 rounded-lg bg-[#66BF6B] p-8 flex flex-col gap-8 items-baseline justify-between relative overflow-hidden h-[280px]"
+          class="cursor-pointer lg:col-span-2 rounded-lg bg-[#66BF6B] p-8 flex flex-col items-baseline justify-between relative overflow-hidden h-[280px] feature-card duration-300 ease-linear"
         >
-          <img
-            src="./assets/apple-white.svg"
-            alt="appletreeat"
-            width="24"
-            height="24"
-          />
-          <p class="text-lg font-merriweather text-white">
-            Kualitas Buah Terbaik.<br />Pengalaman Segar dari Kebun Apel
-            Pilihan.
-          </p>
+          <div class="font-merriweather mb-8">
+            <h4 class="text-white text-xl font-bold mb-1 feature-title">
+              Kualitas Buah Terbaik
+            </h4>
+            <p class="text-white text-lg feature-body">
+              Pengalaman Segar dari Kebun Apel Pilihan
+            </p>
+          </div>
           <button
-            class="py-2 px-4 bg-white rounded-[30px] hover:scale-90 duration-300 ease-linear"
+            id="feature-button"
+            class="py-2 px-4 bg-white rounded-[30px] hover:scale-90 duration-300 ease-linear z-10"
           >
             Beli hampers
           </button>
@@ -182,13 +181,13 @@
           />
         </div>
         <div
-          class="rounded-lg bg-[url(./assets/featured-bg-2.svg)] p-8 bg-cover relative overflow-hidden h-[280px] flex items-end"
+          class="cursor-pointer rounded-lg bg-[linear-gradient(25deg,rgba(102,191,107,0.25)_0%,rgba(255,255,255,1)_40%,rgba(255,255,255,1)_60%,rgba(102,191,107,0.25)_100%)] duration-300 ease-linear p-8 bg-cover relative overflow-hidden h-[280px] flex items-end feature-card"
         >
           <div class="font-merriweather">
-            <h4 class="text-[#66BF6B] text-xl font-bold mb-1">
+            <h4 class="text-[#66BF6B] text-xl font-bold mb-1 feature-title">
               Pemesanan Mudah
             </h4>
-            <p class="text-[#7c7c7c] text-lg">
+            <p class="text-[#7c7c7c] text-lg feature-body">
               Pengalaman belanja menyenangkan
             </p>
           </div>
@@ -201,13 +200,15 @@
           />
         </div>
         <div
-          class="rounded-lg bg-[url(./assets/featured-bg-3.svg)] p-8 bg-cover relative overflow-hidden h-[280px] flex items-start"
+          class="cursor-pointer rounded-lg bg-[linear-gradient(25deg,rgba(102,191,107,0.25)_0%,rgba(255,255,255,1)_40%,rgba(255,255,255,1)_60%,rgba(102,191,107,0.25)_100%)] duration-300 ease-linear p-8 bg-cover relative overflow-hidden h-[280px] flex items-start duration-300 ease-linear feature-card"
         >
           <div class="font-merriweather">
-            <h4 class="text-[#66BF6B] text-xl font-bold mb-1">
+            <h4 class="text-[#66BF6B] text-xl font-bold mb-1 feature-title">
               Kemasan Khusus
             </h4>
-            <p class="text-[#7c7c7c] text-lg">Untuk hampers spesial anda</p>
+            <p class="text-[#7c7c7c] text-lg feature-body">
+              Untuk hampers spesial anda
+            </p>
           </div>
           <img
             src="./assets/feature-3.svg"
@@ -218,13 +219,15 @@
           />
         </div>
         <div
-          class="rounded-lg bg-[url(./assets/featured-bg-4.svg)] p-8 bg-cover relative overflow-hidden h-[280px] flex items-end"
+          class="cursor-pointer rounded-lg bg-[linear-gradient(25deg,rgba(102,191,107,0.25)_0%,rgba(255,255,255,1)_40%,rgba(255,255,255,1)_60%,rgba(102,191,107,0.25)_100%)] duration-300 ease-linear p-8 bg-cover relative overflow-hidden h-[280px] flex items-end feature-card"
         >
           <div class="font-merriweather">
-            <h4 class="text-[#66BF6B] text-xl font-bold mb-1">
+            <h4 class="text-[#66BF6B] text-xl font-bold mb-1 feature-title">
               Pengiriman Cepat
             </h4>
-            <p class="text-[#7c7c7c] text-lg">Pengiriman cepat dan aman</p>
+            <p class="text-[#7c7c7c] text-lg feature-body">
+              Pengiriman cepat dan aman
+            </p>
           </div>
           <img
             src="./assets/feature-4.svg"

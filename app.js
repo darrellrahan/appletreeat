@@ -100,3 +100,43 @@ for (let i = 0; i < toTop.length; i++) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
+
+// feature
+const featureCard = document.getElementsByClassName("feature-card");
+const featureTitle = document.getElementsByClassName("feature-title");
+const featureBody = document.getElementsByClassName("feature-body");
+const featureButton = document.getElementById("feature-button");
+
+function otherCards() {
+  for (let i = 0; i < featureCard.length; i++) {
+    featureCard[i].classList.remove("lg:col-span-2", "bg-[#66BF6B]");
+    featureCard[i].classList.add(
+      "bg-[linear-gradient(25deg,rgba(102,191,107,0.25)_0%,rgba(255,255,255,1)_40%,rgba(255,255,255,1)_60%,rgba(102,191,107,0.25)_100%)]"
+    );
+    featureTitle[i].classList.remove("text-white");
+    featureTitle[i].classList.add("text-[#66BF6B]");
+    featureBody[i].classList.remove("text-white");
+    featureBody[i].classList.add("text-[#7c7c7c]");
+  }
+}
+
+for (let i = 0; i < featureCard.length; i++) {
+  featureCard[i].addEventListener("click", () => {
+    otherCards();
+    if (i === 0) {
+      featureButton.classList.remove("bg-[#66BF6B]", "text-white");
+      featureButton.classList.add("bg-white", "text-black");
+    } else {
+      featureButton.classList.remove("bg-white", "text-black");
+      featureButton.classList.add("bg-[#66BF6B]", "text-white");
+    }
+    featureCard[i].classList.remove(
+      "bg-[linear-gradient(25deg,rgba(102,191,107,0.25)_0%,rgba(255,255,255,1)_40%,rgba(255,255,255,1)_60%,rgba(102,191,107,0.25)_100%)]"
+    );
+    featureCard[i].classList.add("lg:col-span-2", "bg-[#66BF6B]");
+    featureTitle[i].classList.remove("text-[#66BF6B]");
+    featureTitle[i].classList.add("text-white");
+    featureBody[i].classList.remove("text-[#7c7c7c]");
+    featureBody[i].classList.add("text-white");
+  });
+}
