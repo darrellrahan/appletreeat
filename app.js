@@ -1,8 +1,27 @@
 // header
 
 const header = document.getElementById("header");
+const navLinksDesktop = document.getElementsByClassName("nav-link-desktop");
+const line = document.getElementById("header-line");
+const cartBtn = document.getElementById("cart-btn");
+
+for (let i = 0; i < navLinksDesktop.length; i++) {
+  navLinksDesktop[i].classList.add("after:bg-white");
+}
 
 window.addEventListener("scroll", () => {
+  for (let i = 0; i < navLinksDesktop.length; i++) {
+    navLinksDesktop[i].classList.remove(
+      window.pageYOffset > 16 ? "after:bg-white" : "after:bg-black"
+    );
+    navLinksDesktop[i].classList.add(
+      window.pageYOffset > 16 ? "after:bg-black" : "after:bg-white"
+    );
+  }
+  line.style.backgroundColor = window.pageYOffset > 16 ? "#000" : "#FFF";
+  cartBtn.style.borderColor = window.pageYOffset > 16 ? "#000" : "#FFF";
+  cartBtn.style.color = window.pageYOffset > 16 ? "#000" : "#FFF";
+  header.style.color = window.pageYOffset > 16 ? "#000" : "#FFF";
   header.style.backgroundColor =
     window.pageYOffset > 16 ? "#FFF" : "transparent";
   header.style.padding = window.pageYOffset > 16 ? "1rem 2rem" : "2rem";
@@ -21,14 +40,14 @@ const navLinks = document.getElementsByClassName("nav-link");
 
 function closeNav() {
   document.body.style.overflowY = "auto";
-  navbarSection.classList.remove("left-0");
-  navbarSection.classList.add("left-[150%]");
+  navbarSection.classList.remove("right-0", "p-8");
+  navbarSection.classList.add("right-[150%]", "p-0");
 }
 
 openNavbar.addEventListener("click", () => {
   document.body.style.overflowY = "hidden";
-  navbarSection.classList.remove("left-[150%]");
-  navbarSection.classList.add("left-0");
+  navbarSection.classList.remove("right-[150%]", "p-0");
+  navbarSection.classList.add("right-0", "p-8");
 });
 
 closeNavbar.addEventListener("click", closeNav);
@@ -109,12 +128,12 @@ const featureButton = document.getElementById("feature-button");
 
 function otherCards() {
   for (let i = 0; i < featureCard.length; i++) {
-    featureCard[i].classList.remove("lg:col-span-2", "bg-[#66BF6B]");
+    featureCard[i].classList.remove("lg:col-span-2", "bg-[#DFA878]");
     featureCard[i].classList.add(
-      "bg-[linear-gradient(25deg,rgba(102,191,107,0.25)_0%,rgba(255,255,255,1)_40%,rgba(255,255,255,1)_60%,rgba(102,191,107,0.25)_100%)]"
+      "bg-[linear-gradient(25deg,rgba(223,168,120,0.25)_0%,rgba(255,255,255,1)_40%,rgba(255,255,255,1)_60%,rgba(223,168,120,0.25)_100%)]"
     );
     featureTitle[i].classList.remove("text-white");
-    featureTitle[i].classList.add("text-[#66BF6B]");
+    featureTitle[i].classList.add("text-[#DFA878]");
     featureBody[i].classList.remove("text-white");
     featureBody[i].classList.add("text-[#7c7c7c]");
   }
@@ -124,17 +143,17 @@ for (let i = 0; i < featureCard.length; i++) {
   featureCard[i].addEventListener("click", () => {
     otherCards();
     if (i === 0) {
-      featureButton.classList.remove("bg-[#66BF6B]", "text-white");
+      featureButton.classList.remove("bg-[#DFA878]", "text-white");
       featureButton.classList.add("bg-white", "text-black");
     } else {
       featureButton.classList.remove("bg-white", "text-black");
-      featureButton.classList.add("bg-[#66BF6B]", "text-white");
+      featureButton.classList.add("bg-[#DFA878]", "text-white");
     }
     featureCard[i].classList.remove(
-      "bg-[linear-gradient(25deg,rgba(102,191,107,0.25)_0%,rgba(255,255,255,1)_40%,rgba(255,255,255,1)_60%,rgba(102,191,107,0.25)_100%)]"
+      "bg-[linear-gradient(25deg,rgba(223,168,120,0.25)_0%,rgba(255,255,255,1)_40%,rgba(255,255,255,1)_60%,rgba(223,168,120,0.25)_100%)]"
     );
-    featureCard[i].classList.add("lg:col-span-2", "bg-[#66BF6B]");
-    featureTitle[i].classList.remove("text-[#66BF6B]");
+    featureCard[i].classList.add("lg:col-span-2", "bg-[#DFA878]");
+    featureTitle[i].classList.remove("text-[#DFA878]");
     featureTitle[i].classList.add("text-white");
     featureBody[i].classList.remove("text-[#7c7c7c]");
     featureBody[i].classList.add("text-white");
